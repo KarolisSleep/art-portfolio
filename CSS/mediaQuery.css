@@ -1,0 +1,27 @@
+@media screen and (max-width: 600px) {
+    .img2 {
+        position: absolute;
+        left: -30px;
+        top: -30px;
+    
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid rgb(28, 28, 28);
+    }    
+}
+
+@media screen and (max-width: 380px) {
+    .img2 {
+        position: absolute;
+        left: -30px;
+        top: -30px;
+    
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid rgb(28, 28, 28);
+    }    
+}
