@@ -1,17 +1,13 @@
-/* .img1 {
-    height: 180px;
-    width: 100%;
-    object-fit: cover;
-
-    position: relative;
-    z-index: 0;
+@media only screen and (max-width: 600px) {
+    .img2 {
+        position: absolute;
+        left: -40px;
+        top: -40px;
+    
+        width:120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid rgb(28, 28, 28);
+    }    
 }
-
-.darkening-div--img1 {
-    height: 180px;
-    width: 100%;
-
-    background: linear-gradient(transparent,rgb(24, 25, 26));
-    position: absolute;
-    z-index: 10;
-} */
