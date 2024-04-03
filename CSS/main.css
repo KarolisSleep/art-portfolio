@@ -1,4 +1,11 @@
 body {
-    background: black;
-    color: aqua;
+    background: var(--body-background);
+    color: var(--text-color);
+    margin: 0;
+}
+
+:root{
+    --text-color: rgb(88, 88, 88);
+    --body-background: rgb(24, 25, 26);
+    --secondary-body-background: rgb(37,37,38);
 }

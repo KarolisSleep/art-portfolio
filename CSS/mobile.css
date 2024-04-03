@@ -1,0 +1,17 @@
+.img1 {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+
+    position: relative;
+    z-index: 0;
+}
+
+.darkening-div--img1 {
+    height: 180px;
+    width: 100%;
+
+    background: linear-gradient(transparent,rgb(24, 25, 26));
+    position: absolute;
+    z-index: 10;
+}
