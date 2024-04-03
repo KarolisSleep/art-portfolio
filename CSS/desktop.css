@@ -1,11 +1,9 @@
-
 .darkening-div--img1 {
     height: 35vh;
     width: 100%;
-
     
     background: linear-gradient(transparent,rgb(24, 25, 26));
-    position: absolute;
+    position: fixed;
     z-index: 10;
 }
 
@@ -19,7 +17,7 @@
 }
 
 .img2 {
-    position: relative;
+    position: absolute;
     left: -60px;
     top:-40px;
 
@@ -41,8 +39,12 @@
     top: 10vh;
     margin: auto;
     z-index: 15;
+    display: flex;
 }
 
 .child-box {
-    
+    margin: 20px;
+    height: 230px;
+    width: 500px;
+    background-color: black;
 }
