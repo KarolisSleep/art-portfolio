@@ -25,7 +25,16 @@
         width: 73vw;
         min-width: 220px;
         max-width: 280px;
-        height: max-content;
         margin: 0.5rem auto;
+    }
+
+    .img3 {
+        height: 408.062px;
+    }
+    .img6{
+        height: 396.300px;
+    }
+    .img7{
+        height: 478.288px;
     }
 }
