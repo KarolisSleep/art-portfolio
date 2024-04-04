@@ -29,8 +29,6 @@
 
 .img3 {
     display: block;
-    /* width: 300px;
-    height: max-content; */
 }
 .img2, .img3, .img4, .img5, .img6, .img7 {
     border: 3px solid var(--border-color);
@@ -47,9 +45,9 @@
     padding: 1rem;
     
     position: relative;
-    left: 10%;
+    left: 50%; transform: 
+    translateX(-50%);
     top: 10vh;
-    margin: auto;
     z-index: 15;
 
     /* display: grid; */
