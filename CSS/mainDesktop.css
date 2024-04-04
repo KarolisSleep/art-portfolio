@@ -11,7 +11,7 @@
     height: 35vh;
     width: 100%;
     object-fit: cover;
-
+    
     position: fixed;
     z-index: 0;
 }
@@ -20,40 +20,94 @@
     position: absolute;
     left: -60px;
     top:-40px;
-
+    
     width:140px;
     height: 140px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid var(--border-color);
 }
 
 .img3 {
     display: block;
-    width: 300px;
-    margin: 1rem;
-    border: 3px solid var(--border-color);
-    
+    /* width: 300px;
+    height: max-content; */
 }
-.img2:hover, .img3:hover{
+.img2, .img3, .img4, .img5, .img6, .img7 {
+    border: 3px solid var(--border-color);
+}
+/* .img2:hover, .img3:hover, .img4:hover{
     border: 3px solid red;
     transition: 0.3s;
-}
-
+} */
 .container {
     width: 80vw;
     height:max-content;
     background: var(--secondary-body-background);
     border: 3px solid var(--border-color);
+    padding: 1rem;
     
-    position: fixed;
+    position: relative;
     left: 10%;
     top: 10vh;
     margin: auto;
     z-index: 15;
-    /* display: grid;
-    gap: 0.1rem; */
+
+    /* display: grid; */
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 1rem;
 }
+
+/* .card-container {
+    position: relative;
+    width: 290px;
+    height: 350px;
+} */
+
+/* .img4 {
+    position: absolute;
+    width: 260px;
+    height: 320px;
+
+    z-index: 5;
+    left: 0;
+}
+.img5 {
+    position: absolute;
+    width: 260px;
+    height: 320px;
+    
+    bottom: 0;
+    right: 0;
+} */
+
+.linear-gradient--dim-shadow{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 4;
+    width: 260px;
+    height: 320px;
+
+    bottom: 0;
+    right: 0;;
+}
+
+.img3, .img6, .img7 {
+    width: 300px;
+    height: max-content;
+}
+
+.img6 {
+    position: relative;
+    z-index: 10;
+}
+.img6:hover {
+    z-index: 0;
+}
+
+
 
 /* .box-1{
 grid-column:1/2;
