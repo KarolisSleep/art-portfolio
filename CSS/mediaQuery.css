@@ -8,6 +8,7 @@
     }
     .img3, .img6, .img7{
         width: 270px;
+        height: max-content;
     }
 
     .img2:hover, .img3:hover{
@@ -24,6 +25,7 @@
         width: 73vw;
         min-width: 220px;
         max-width: 280px;
+        height: max-content;
         margin: 0.5rem auto;
     }
 }
