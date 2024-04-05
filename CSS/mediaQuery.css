@@ -22,30 +22,21 @@
         width: 90px;
         height: 90px;
     }    
-    .img3, .img6, .img7{
-        /* width: 73vw;
-        min-width: 220px;
-        max-width: 280px;
-        max-height: min-content; */
-        /* margin: 0.5rem auto; */
-    }
 
     .img3 {
-        width: 235.350px;
-        height: 350px;
+        width: 260px;
+        height: 378.925px;
     }
     .img6{
-        width: 235.350px;
-        height: 333.100px;
+        width: 260px;
+        height: 368px;
     }
     .img7{
-        width: 235.350px;
-        height: 402.013px;
+        width: 260px;
+        height: 444.125px;
     }
 
     .img3, .img6, .img7{
-        width: 260px;
-        height: max-content;
         margin: 0.5rem auto;
     }
 }

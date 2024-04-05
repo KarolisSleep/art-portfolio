@@ -59,6 +59,15 @@
     min-width: min-content;
 }
 
+.card--colorful-drawings {
+    margin: 0 auto;
+    display: inline-flex;
+    justify-content: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
 /* .card-container {
     position: relative;
     width: 290px;
