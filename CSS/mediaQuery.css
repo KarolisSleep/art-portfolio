@@ -27,11 +27,8 @@
         min-width: 220px;
         max-width: 280px;
         max-height: min-content; */
-        margin: 0.5rem auto;
+        /* margin: 0.5rem auto; */
     }
-    /* .pokemon-box {
-        margin: auto;
-    } */
 
     .img3 {
         width: 235.350px;
@@ -44,5 +41,11 @@
     .img7{
         width: 235.350px;
         height: 402.013px;
+    }
+
+    .img3, .img6, .img7{
+        width: 260px;
+        height: max-content;
+        margin: 0.5rem auto;
     }
 }
