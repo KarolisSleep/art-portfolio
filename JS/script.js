@@ -34,4 +34,25 @@ if (window.innerWidth >= 744 && window.innerWidth <= 1113) {
     } else {
         element.style.justifyContent = 'center'; // Apply centering
     }
+
+
+
+    function assignClassToElements() {
+        var element = document.querySelector('.card--colorful-drawings');
+        var screenWidth = window.innerWidth;
+    
+        // Define scaling factor and top property based on screen width
+        var scalingFactor, topValue;
+        if (screenWidth < 773) {
+            scalingFactor = 0.6;
+            topValue = '-300px';
+        } else {
+            scalingFactor = 1; // Default scale for larger screens
+            topValue = '0px'; // Default top value
+        }
+    
+        // Apply transform property with the calculated scaling factor
+        element.style.transform = 'scale(' + scalingFactor + ')';
+        element.style.top = topValue;
+    }
 };
