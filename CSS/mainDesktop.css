@@ -75,12 +75,12 @@
 }
 
 .hiddingImages {
-    position: absolute;
-    bottom: -25px;
-    scale: 0.8;
-    z-index: -5;
+    display: none;
+    top: 0;
+    left: 0;
 }
 .normalImage{
+    display: block;
     position: relative;
     bottom: 0;
     scale: 1;
