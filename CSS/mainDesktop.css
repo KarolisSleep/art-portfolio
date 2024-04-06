@@ -69,6 +69,10 @@
 
         gap: 8px;
     }
+
+.img-sunrise {
+    grid-area: sunrise;
+}
 .img-woods {
     grid-area: woods;
 }
