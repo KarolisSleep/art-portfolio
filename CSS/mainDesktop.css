@@ -62,9 +62,12 @@
     grid-template-areas: 
         "sunrise woods town sunflowers"
         "sunrise woods khazix sunflowers"
-        "ocean desert . sunflowers";
+        "ocean desert . sunflowers"
+        ". desert . sunflowers";
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 200px 200px 200px 200px 200px;
+
         gap: 8px;
-     grid: wrap;
     }
 .img-woods {
     grid-area: woods;
