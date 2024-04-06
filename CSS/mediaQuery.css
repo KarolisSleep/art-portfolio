@@ -1,5 +1,5 @@
 @media screen and (max-width: 800px) {
-    .background-image {
+    .profile-picture {
         left: -30px;
         top: -30px;
     
@@ -29,7 +29,7 @@
         width: 260px;
         left: 0px;
     }
-    .background-image {
+    .profile-picture {
         width: 90px;
         height: 90px;
     }    
@@ -45,9 +45,5 @@
     .img7{
         width: 260px;
         height: 444.125px;
-    }
-
-    .img3, .img6, .img7{
-        /* margin: 0.5rem auto; */
     }
 }
