@@ -45,6 +45,7 @@
     translateX(-50%);
     top: 10vh;
     z-index: 15;
+    min-width: 264px;
 
 }
 
