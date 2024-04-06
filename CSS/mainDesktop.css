@@ -29,46 +29,37 @@
     border: 3px solid var(--border-color);
     }
 
-.profile-picture, .img-sunrise, .img4, .img5, .img-woods, 
-.img-sunflowers, .img-town, .img-khazix, .img-desert, .img-ocean {
-    border: 3px solid var(--border-color);
+    .container {
+        width: 80vw;
+        height:max-content;
+        background: var(--secondary-body-background);
+        border: 3px solid var(--border-color);
+        padding: 1rem;
+        
+        position: relative;
+        left: 50%; transform: 
+        translateX(-50%);
+        top: 10vh;
+        z-index: 15;
+        min-width: 264px;
+        max-width: 1190px;
     }
-
-.container {
-    width: 80vw;
-    height:max-content;
-    background: var(--secondary-body-background);
-    border: 3px solid var(--border-color);
-    padding: 1rem;
     
-    position: relative;
-    left: 50%; transform: 
-    translateX(-50%);
-    top: 10vh;
-    z-index: 15;
-    min-width: 264px;
-    }
-
-.card--colorful-drawings {
-    /* position: relative;
-    margin: 0 auto;
-    display: flex;
-    justify-content: start;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1rem; */
-
+    
+    .card--colorful-drawings {
     display: grid;
     grid-template-areas: 
-        "sunrise woods town sunflowers"
-        "sunrise woods khazix sunflowers"
-        "ocean desert . sunflowers"
-        ". desert . sunflowers";
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 200px 200px 200px 200px 200px;
-
-        gap: 8px;
-    }
+    "sunrise woods town sunflowers"
+    "sunrise woods khazix sunflowers"
+    "ocean desert . sunflowers"
+    ". desert windmill sunflowers";
+    grid-template-columns: repeat(auto-fill, 300px) ;
+    grid-template-rows: repeat(auto-fill, 200px);
+    gap: 5px 0px;
+    position: initial;
+        left: initial;
+        transform: initial;
+}
 
 .img-sunrise {
     grid-area: sunrise;
@@ -91,11 +82,29 @@
 .img-desert {
     grid-area: desert;
 }
+.img-windmill{
+    grid-area: windmill;
+}
 
+.img-khazix, .img-ocean, .img-desert, .img-windmill {
+    position: relative;
+}
 
+.img-windmill {
+    top: -186px
+}
+.img-khazix {
+    top: 58px;
+}
 
+.img-desert{
+    top: -13px;
+}
 
-
+.profile-picture, .img-sunrise, .img4, .img5, .img-woods, 
+.img-sunflowers, .img-town, .img-khazix, .img-desert, .img-ocean, .img-windmill {
+    border: 3px solid var(--border-color);
+    }
 
 .hiddingImages {
     display: none;
@@ -107,12 +116,12 @@
     transition: 1s;
     }
 
-.img-sunrise, .img-woods, .img-sunflowers, .img-town, .img-khazix, .img-desert, .img-ocean  {
+.img-sunrise, .img-woods, .img-sunflowers, .img-town, .img-khazix, .img-desert, .img-ocean, .img-windmill {
     width: 290px;
     height: max-content;
     }
 
-.linear-gradient--cover-shadow{
+/* .linear-gradient--cover-shadow{
     position: absolute;
     background: rgba(0, 0, 0, 0.5);
     z-index: 4;
@@ -123,4 +132,4 @@
     right: 0;
     z-index: 5;
     border: 3px solid var(--border-color);
-    }
+    } */

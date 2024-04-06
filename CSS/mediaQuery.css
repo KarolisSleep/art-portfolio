@@ -48,3 +48,79 @@
         margin: 0 auto;
         }
     }
+
+    @media screen and (max-width: 1495px) {
+        .card--colorful-drawings {
+            display: grid;
+            grid-template-areas: 
+            "sunrise woods town "
+            "sunrise woods sunflowers"
+            "ocean desert sunflowers"
+            ". desert sunflowers"
+            "windmill khazix .";
+            grid-template-columns: repeat(auto-fill, 300px) ;
+            grid-template-rows: repeat(auto-fill, 200px);
+            gap: 5px 0px;
+        }        
+        .img-khazix, .img-ocean, .img-desert, .img-sunflowers {
+            position: relative;
+        }
+        
+        .img-khazix {
+            top: -68px;
+        }
+        .img-windmill {
+            top: -38px;
+        }
+        .img-sunflowers {
+            top: 57px;
+        }
+
+        .img-ocean {
+            top: -11px;
+        }
+        
+        .img-desert{
+            top: -23px;
+        }
+        
+    }
+    @media only screen and (max-width: 1113px) and (min-width: 744px) {
+        .card--colorful-drawings {
+            display: grid;
+            grid-template-areas: 
+            "sunrise desert"
+            "sunrise woods"
+            "sunflowers woods "
+            "sunflowers khazix"
+            "ocean khazix"
+            "town windmill";
+            grid-template-columns: repeat(auto-fill, 300px) ;
+            grid-template-rows: repeat(auto-fill, 200px);
+            gap: 5px 0px;
+            /* justify-content: center; */
+
+        }        
+        .img-khazix, .img-ocean, .img-desert, .img-sunflowers, .img-woods {
+            position: relative;
+        }
+        
+        .img-desert{
+            top: 0px;
+        }   
+        .img-woods {
+            top: 18px;
+        }
+        .img-khazix {
+            top: -42px;
+        }
+        .img-sunflowers {
+            top: 0px;
+        }
+        .img-windmill {
+            top: -310px;
+        }
+        .img-ocean {
+            top: 0px;
+        }     
+    }
