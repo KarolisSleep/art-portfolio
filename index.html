@@ -6,33 +6,37 @@
     <link rel="stylesheet" href="./CSS/global.css">
     <link rel="stylesheet" href="./CSS/mainDesktop.css">
     <link rel="stylesheet" href="./CSS/mediaQuery.css">
-    <script src="./JS/main.js"></script>
     <title>Sleep's art portfolio</title>
 </head>
 <body>
     <div class="linear-gradient--img1"></div>
-    <img class="img1" src="./IMG/drawings/ChaosBurst.jpg" alt="abstract drawing">
+    <img class="background-image" src="./IMG/drawings/ChaosBurst.jpg" alt="abstract drawing">
     
     <div class="container">
-        <img class="img2" src="./IMG//drawings/BurstEffortAttempt.jpg" alt="chaotic abstract drawing destruction">
-        
-        <div class="card--colorful-drawings">
-            <img class="img3" src="./IMG/drawings/BurstEffortAttempt.jpg" alt="Volcano planets centipede nice colors anger feelings hope, darkness">
-            <img class="img6" src="./IMG/drawings/FierySoul.jpg" alt="">
-            <img class="img7" src="./IMG/drawings/aBattle.jpg" alt="">
+        <img class="profile-picture" src="./IMG//drawings/BurstEffortAttempt.jpg" alt="chaotic abstract drawing destruction">
+        <!-- onclick="assignClassToElements()" -->
+        <!-- "this.classList.toggle('card-open')" -->
+        <div onclick="assignClassToElements()" class="card--colorful-drawings">
+            <img class="mainImage img3" src="./IMG/drawings/BurstEffortAttempt.jpg" alt="Volcano planets centipede nice colors anger feelings hope, darkness">
+            <img class="hiddingImages img6" src="./IMG/drawings/FierySoul.jpg" alt="forest">
+            <img class="hiddingImages img7" src="./IMG/drawings/aBattle.jpg" alt="sunrise">
         </div>
-        <!-- <div class="card-container"></div> -->
-        <!-- <img class="img4" src="./IMG/drawings/AutumnLeaveswebp.webp">
-            <img class="img5" src="./IMG/drawings/AutumnLeaves1.jpg"> -->
+        
+        <!-- <div class="linear-gradient--cover-shadow"></div> -->
+
+    <!-- <div class="card-container"></div> -->
+    <!-- <img class="img4" src="./IMG/drawings/AutumnLeaveswebp.webp">
+    <img class="img5" src="./IMG/drawings/AutumnLeaves1.jpg"> -->
         
         
-        <!-- <div class="pokemon-box">
-            <p class="pokemon-box--text">Pokemon drawings</p>
-            <p class="pokemon-box--text2">2023-2024</p>
-            <div class="linear-gradient--cover-shadow"></div>
-            <img class="pokemon-img1" src="./IMG/pokemon/Snorlax and UncleIroh.jpg" alt="">
-        </div> -->
+    <!-- <div class="pokemon-box">
+        <p class="pokemon-box--text">Pokemon drawings</p>
+        <p class="pokemon-box--text2">2023-2024</p>
+        <div class="linear-gradient--cover-shadow"></div>
+        <img class="pokemon-img1" src="./IMG/pokemon/Snorlax and UncleIroh.jpg" alt="">
+    </div> -->
     </div>
-    
+            
+    <script src="./JS/script.js"></script>
 </body>
 </html>

@@ -7,7 +7,7 @@
     z-index: 10;
 }
 
-.img1 {
+.background-image {
     height: 35vh;
     width: 100%;
     object-fit: cover;
@@ -16,7 +16,7 @@
     z-index: 0;
 }
 
-.img2 {
+.profile-picture {
     position: absolute;
     left: -60px;
     top:-40px;
@@ -25,18 +25,14 @@
     height: 140px;
     border-radius: 50%;
     object-fit: cover;
+    z-index: 15;
+    border: 3px solid var(--border-color);
 }
 
-.img3 {
-    display: block;
-}
 .img2, .img3, .img4, .img5, .img6, .img7 {
     border: 3px solid var(--border-color);
 }
-/* .img2:hover, .img3:hover, .img6:hover, .img7:hover{
-    border: 3px solid red;
-    transition: 0.3s;
-} */
+
 .container {
     width: 80vw;
     height:max-content;
@@ -50,16 +46,10 @@
     top: 10vh;
     z-index: 15;
 
-    /* display: grid; */
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: start;
-    gap: 1rem;
-    min-width: min-content;
 }
 
 .card--colorful-drawings {
+    position: relative;
     margin: 0 auto;
     display: inline-flex;
     justify-content: start;
@@ -68,38 +58,32 @@
     gap: 1rem;
 }
 
-/* .card-container {
-    position: relative;
-    width: 290px;
-    height: 350px;
-} */
+.card-open {
+    width: 0px;
+    height: max-content;   
 
-/* .img4 {
-    position: absolute;
-    width: 260px;
-    height: 320px;
-
-    z-index: 5;
-    left: 0;
+    animation: cardOpen 1.2s;
 }
-.img5 {
-    position: absolute;
-    width: 260px;
-    height: 320px;
-    
-    bottom: 0;
-    right: 0;
-} */
 
-.linear-gradient--cover-shadow{
-    position: absolute;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 4;
-    width: 100px;
-    height: 100px;
+@keyframes cardOpen {
+    100%{
+        
+    }
+}
+.img3 {
+    z-index: 5;
+}
 
+.hiddingImages {
+    position: absolute;
+    bottom: -25px;
+    scale: 0.8;
+}
+.normalImage{
+    position: relative;
     bottom: 0;
-    right: 0;;
+    scale: 1;
+    transition: 1s;
 }
 
 .img3, .img6, .img7 {
@@ -107,12 +91,18 @@
     height: max-content;
 }
 
-.img6 {
-    position: relative;
-    z-index: 10;
-}
-.img6:hover {
-    z-index: 0;
+
+.linear-gradient--cover-shadow{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 4;
+    width:  100%;
+    height: 100%;
+
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+    border: 3px solid var(--border-color);
 }
 
 .pokemon-box {
@@ -148,22 +138,45 @@
 }
 
 
-/* .box-1{
-grid-column:1/2;
-grid-row:1/2;
-}
+    /* .box-1{
+        grid-column:1/2;
+        grid-row:1/2;
+    }
 
-.box-2{
-grid-column:2/3;
-grid-row:1/2;
-}
+    .box-2{
+        grid-column:2/3;
+    grid-row:1/2;
+    }
 
-.box-3{
-grid-column:1/2;
-grid-row:2/3;
-}
+    .box-3{
+    grid-column:1/2;
+    grid-row:2/3;
+    }
 
-.box-4{
-grid-column:2/2;
-grid-row:2/3;
-} */
+    .box-4{
+        grid-column:2/2;
+        grid-row:2/3;
+
+    } */
+    /* /* .card-container {
+        position: relative;
+        width: 290px;
+        height: 350px;
+    } */
+    
+    /* .img4 {
+        position: absolute;
+        width: 260px;
+        height: 320px;
+    
+        z-index: 5;
+        left: 0;
+    }
+    .img5 {
+        position: absolute;
+        width: 260px;
+        height: 320px;
+        
+        bottom: 0;
+        right: 0;
+    }

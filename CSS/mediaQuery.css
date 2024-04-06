@@ -6,18 +6,33 @@
         width: 100px;
         height: 100px;
     }
-    .img3, .img6, .img7{
+    .card--colorful-drawings{
         width: 270px;
         height: max-content;
-        margin: 0.5rem auto;
     }
-
+    
+    .linear-gradient--cover-shadow{
+        width: 300px;
+        left: 0px;
+    }
+    
     .img2:hover, .img3:hover{
         border: 3px solid var(--border-color);
     }
 }
 
 @media screen and (max-width: 480px) {
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    
+    .linear-gradient--cover-shadow{
+        width: 260px;
+        left: 0px;
+    }
     .img2 {
         width: 90px;
         height: 90px;
@@ -37,6 +52,6 @@
     }
 
     .img3, .img6, .img7{
-        margin: 0.5rem auto;
+        /* margin: 0.5rem auto; */
     }
 }
