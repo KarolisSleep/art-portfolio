@@ -1,5 +1,5 @@
 @media screen and (max-width: 800px) {
-    .img2 {
+    .background-image {
         left: -30px;
         top: -30px;
     
@@ -15,10 +15,6 @@
         width: 300px;
         left: 0px;
     }
-    
-    .img2:hover, .img3:hover{
-        border: 3px solid var(--border-color);
-    }
 }
 
 @media screen and (max-width: 480px) {
@@ -33,7 +29,7 @@
         width: 260px;
         left: 0px;
     }
-    .img2 {
+    .background-image {
         width: 90px;
         height: 90px;
     }    
