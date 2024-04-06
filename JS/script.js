@@ -1,6 +1,6 @@
 function assignClassToElements() {
-    var images = document.querySelectorAll('.hiddingImages'); // Select all images with class 'hiddenImages'
+    const images = document.querySelectorAll('.hiddingImages'); 
     images.forEach(function(image) {
-        image.classList.toggle('normalImage'); // Add the class 'highlight' to each image
+        image.classList.toggle('showImages'); 
     });
-}
+};

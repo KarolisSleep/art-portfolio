@@ -2,7 +2,7 @@ body {
     background: var(--body-background);
     color: var(--text-color);
     margin: 0;
-}
+    }
 
 :root{
     --text-color: rgb(88, 88, 88);
@@ -10,4 +10,16 @@ body {
     --secondary-body-background: rgb(37,37,38);
     --border-color: rgb(28, 28, 28);
     --hover-color: rgb(250, 0, 0);
-}
+    }
+
+img {
+    pointer-events: none;
+    user-select: none;
+    }
+/* The only downside is that pointer-events: none 
+causes your :hover, :active and other pointer-related 
+CSS pseudo-classes to stop working. */
+/* In order to solve this, you should use a <div> or
+ something as a wrapper for your <img> and then apply 
+ your :hover, :active pseudo-classes on that wrapper 
+ as opposed the <img> itself. */

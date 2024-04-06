@@ -5,45 +5,46 @@
     
         width: 100px;
         height: 100px;
-    }
+        }
     .card--colorful-drawings{
         height: max-content;
-    }
+        }
     
     .linear-gradient--cover-shadow{
         width: 300px;
         left: 0px;
+        }
     }
-}
 
 @media screen and (max-width: 480px) {
 
     .container {
-        display: flex;
-        align-items: center;
-        justify-content: start;
         padding: 8px;
-    }
+        }
     
     .linear-gradient--cover-shadow{
         width: 260px;
         left: 0px;
-    }
+        }
     .profile-picture {
         width: 90px;
         height: 90px;
-    }    
-
+        }    
+    
     .img3 {
         width: 260px;
         height: 378.925px;
-    }
+        }
     .img6{
         width: 260px;
         height: 368px;
-    }
+        }
     .img7{
         width: 260px;
         height: 444.125px;
+        }   
+
+    .img3, .img6, .img7 {
+        margin: 0 auto;
+        }
     }
-}

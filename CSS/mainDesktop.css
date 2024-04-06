@@ -5,7 +5,7 @@
     background: linear-gradient(transparent,rgb(24, 25, 6));
     position: fixed;
     z-index: 10;
-}
+    }
 
 .background-image {
     height: 35vh;
@@ -14,7 +14,7 @@
     
     position: fixed;
     z-index: 0;
-}
+    }
 
 .profile-picture {
     position: absolute;
@@ -27,11 +27,11 @@
     object-fit: cover;
     z-index: 15;
     border: 3px solid var(--border-color);
-}
+    }
 
-.img2, .img3, .img4, .img5, .img6, .img7 {
+.profile-picture, .img3, .img4, .img5, .img6, .img7 {
     border: 3px solid var(--border-color);
-}
+    }
 
 .container {
     width: 80vw;
@@ -46,53 +46,32 @@
     top: 10vh;
     z-index: 15;
     min-width: 264px;
-
-}
+    }
 
 .card--colorful-drawings {
     position: relative;
     margin: 0 auto;
-    display: inline-flex;
+    display: flex;
     justify-content: start;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem;
-}
-
-.card-open {
-    width: 0px;
-    height: max-content;   
-
-    animation: cardOpen 1.2s;
-}
-
-@keyframes cardOpen {
-    100%{
-        
     }
-}
-.img3 {
-    z-index: 5;
-}
 
 .hiddingImages {
     display: none;
-    top: 0;
-    left: 0;
-}
-.normalImage{
+    }
+
+.showImages{
     display: block;
-    position: relative;
-    bottom: 0;
     scale: 1;
     transition: 1s;
-}
+    }
 
 .img3, .img6, .img7 {
     width: 300px;
     height: max-content;
-}
-
+    }
 
 .linear-gradient--cover-shadow{
     position: absolute;
@@ -105,7 +84,7 @@
     right: 0;
     z-index: 5;
     border: 3px solid var(--border-color);
-}
+    }
 
 .pokemon-box {
     position: relative;
@@ -113,13 +92,13 @@
     height: 100px;
     background-color: rgba(0, 0, 0, 0.7);
     border: 3px solid var(--border-color);
-}
+    }
 
 .pokemon-img1{
     width: 100px;
     height: 100px;
     object-fit: cover;
-}
+    }
 .pokemon-box--text{
     position: absolute;
     margin-left: auto; 
@@ -128,7 +107,7 @@
     text-align: center;
     color: white;
     z-index: 5;
-}
+    }
 .pokemon-box--text2{
     position: absolute;
     bottom: -11px;
@@ -137,34 +116,34 @@
     color: rgba(136, 136, 136, 0.743);
     z-index: 5;
     font-size: 0.61em;
-}
+    }
 
 
     /* .box-1{
         grid-column:1/2;
         grid-row:1/2;
-    }
+        }
 
     .box-2{
         grid-column:2/3;
     grid-row:1/2;
-    }
+        }
 
     .box-3{
     grid-column:1/2;
     grid-row:2/3;
-    }
+        }
 
     .box-4{
         grid-column:2/2;
         grid-row:2/3;
 
-    } */
+        } */
     /* /* .card-container {
         position: relative;
         width: 290px;
         height: 350px;
-    } */
+        } */
     
     /* .img4 {
         position: absolute;
@@ -173,7 +152,7 @@
     
         z-index: 5;
         left: 0;
-    }
+        }
     .img5 {
         position: absolute;
         width: 260px;
@@ -181,4 +160,4 @@
         
         bottom: 0;
         right: 0;
-    }
+        }
