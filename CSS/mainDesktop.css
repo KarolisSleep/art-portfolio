@@ -29,7 +29,8 @@
     border: 3px solid var(--border-color);
     }
 
-.profile-picture, .img3, .img4, .img5, .img6, .img7 {
+.profile-picture, .img-sunrise, .img4, .img5, .img-woods, 
+.img-sunflowers, .img-town, .img-khazix, .img-desert, .img-ocean {
     border: 3px solid var(--border-color);
     }
 
@@ -49,14 +50,45 @@
     }
 
 .card--colorful-drawings {
-    position: relative;
+    /* position: relative;
     margin: 0 auto;
     display: flex;
     justify-content: start;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1rem; */
+
+    display: grid;
+    grid-template-areas: 
+        "sunrise woods town sunflowers"
+        "sunrise woods khazix sunflowers"
+        "ocean desert . sunflowers";
+        gap: 8px;
+     grid: wrap;
     }
+.img-woods {
+    grid-area: woods;
+}
+.img-town {
+    grid-area: town;
+}
+.img-khazix {
+    grid-area: khazix;
+}
+.img-sunflowers {
+    grid-area: sunflowers;
+}
+.img-ocean {
+    grid-area: ocean;
+}
+.img-desert {
+    grid-area: desert;
+}
+
+
+
+
+
 
 .hiddingImages {
     display: none;
@@ -68,8 +100,8 @@
     transition: 1s;
     }
 
-.img3, .img6, .img7 {
-    width: 300px;
+.img-sunrise, .img-woods, .img-sunflowers, .img-town, .img-khazix, .img-desert, .img-ocean  {
+    width: 290px;
     height: max-content;
     }
 
@@ -85,79 +117,3 @@
     z-index: 5;
     border: 3px solid var(--border-color);
     }
-
-.pokemon-box {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border: 3px solid var(--border-color);
-    }
-
-.pokemon-img1{
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    }
-.pokemon-box--text{
-    position: absolute;
-    margin-left: auto; 
-    margin-right: auto;
-    top:10px;
-    text-align: center;
-    color: white;
-    z-index: 5;
-    }
-.pokemon-box--text2{
-    position: absolute;
-    bottom: -11px;
-    right: 1px;
-    text-align: center;
-    color: rgba(136, 136, 136, 0.743);
-    z-index: 5;
-    font-size: 0.61em;
-    }
-
-
-    /* .box-1{
-        grid-column:1/2;
-        grid-row:1/2;
-        }
-
-    .box-2{
-        grid-column:2/3;
-    grid-row:1/2;
-        }
-
-    .box-3{
-    grid-column:1/2;
-    grid-row:2/3;
-        }
-
-    .box-4{
-        grid-column:2/2;
-        grid-row:2/3;
-
-        } */
-    /* /* .card-container {
-        position: relative;
-        width: 290px;
-        height: 350px;
-        } */
-    
-    /* .img4 {
-        position: absolute;
-        width: 260px;
-        height: 320px;
-    
-        z-index: 5;
-        left: 0;
-        }
-    .img5 {
-        position: absolute;
-        width: 260px;
-        height: 320px;
-        
-        bottom: 0;
-        right: 0;
-        }
