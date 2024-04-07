@@ -85,7 +85,7 @@
         }
         
     }
-    @media only screen and (max-width: 1113px) and (min-width: 744px) {
+    @media only screen and (max-width: 1113px) and (min-width: 730px) {
         .card--colorful-drawings {
             display: grid;
             grid-template-areas: 
@@ -121,11 +121,13 @@
         .img-ocean {
             top: 0px;
         }     
-    }
+        body {
+            background: rgb(39, 34, 0);
+    }}
 
 
     
-    @media only screen and (max-width: 773px) {
+    @media only screen and (max-width: 730px) and (min-width: 443px) {
         .card--colorful-drawings {
             display: grid;
             grid-template-areas: 
@@ -141,6 +143,7 @@
             
             position: relative;
             top: 0;
+            /* scale: 0.6; */
         }        
         .img-khazix, .img-ocean, .img-desert, .img-sunflowers, .img-woods {
             position: relative;
@@ -164,12 +167,14 @@
         .img-ocean {
             top: 0px;
         }     
-    }
+        body {
+            background: rgb(55, 0, 0);
+    }}
 
 
 
 
-    @media only screen and (max-width: 443px) {
+    @media only screen and (max-width: 442px) {
         .card--colorful-drawings {
             display: grid;
             grid-template-areas: 
@@ -208,5 +213,7 @@
         }
         .img-ocean {
             top: 0px;
-        }     
-    }
+        }    
+        body {
+            background: rgb(12, 0, 67);
+    }}
