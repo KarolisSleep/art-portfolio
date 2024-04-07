@@ -179,6 +179,7 @@
             top: -112px;
         }
         .profile-picture { 
+            left: -30px;
             width: 90px;
             height: 90px;
         }    
@@ -231,6 +232,8 @@
             top: -120px;
         }
         .profile-picture {
+            left: -25px;
+            top: -25;
             width: 70px;
             height: 70px;
         }
