@@ -148,7 +148,6 @@
             
             position: relative;
             top: 0;
-            justify-content: center;
         }        
         .img-sunrise, .img-desert, .img-woods, .img-sunflowers, .img-khazix, .img-ocean, .img-windmill, .img-town {
             position: relative;
