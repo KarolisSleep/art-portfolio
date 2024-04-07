@@ -1,13 +1,13 @@
 function assignClassToElements() {
-    /*  Selects all elements with the class .hiddenImages and then
-        toggles the class showImage */
+    /*  Selects all elements with the class .hiddingImages and then
+        toggles the class showImages */
     const images = document.querySelectorAll('.hiddingImages'); 
     images.forEach(function(image) {
         image.classList.toggle('showImages'); 
-        
+    });
 
-// Check if the window width is between 744px and 1113px
-if (window.innerWidth >= 744 && window.innerWidth <= 1113) {
+    // Check if the window width is between 744px and 1113px
+    if (window.innerWidth >= 744 && window.innerWidth <= 1113) {
         // Selects the class
         var element = document.querySelector('.card--colorful-drawings');
 
@@ -21,9 +21,8 @@ if (window.innerWidth >= 744 && window.innerWidth <= 1113) {
             element.style.left = '50%';
             element.style.transform = 'translateX(-50%)';
             // This makes it so the children stay in the middle
-        }}
-    });
-
+        }
+    }
 
     var element = document.querySelector('.card--colorful-drawings');
     // Toggle the justify-content property
@@ -33,7 +32,7 @@ if (window.innerWidth >= 744 && window.innerWidth <= 1113) {
         element.style.justifyContent = 'center'; // Apply centering
     }
 
-    
+    // this function makes it so everything works past ėėępix
     var element = document.querySelector('.card--colorful-drawings');
     var screenWidth = window.innerWidth;
 
@@ -52,4 +51,4 @@ if (window.innerWidth >= 744 && window.innerWidth <= 1113) {
         element.style.transform = 'scale(' + scalingFactor + ')';
         element.style.top = topValue;
     }
-    };
+}
