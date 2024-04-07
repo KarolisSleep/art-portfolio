@@ -1,54 +1,3 @@
-@media screen and (max-width: 800px) {
-    .profile-picture {
-        left: -30px;
-        top: -30px;
-    
-        width: 100px;
-        height: 100px;
-        }
-    .card--colorful-drawings{
-        height: max-content;
-        }
-    
-    .linear-gradient--cover-shadow{
-        width: 300px;
-        left: 0px;
-        }
-    }
-
-@media screen and (max-width: 480px) {
-
-    .container {
-        padding: 16px 8px;
-        }
-    
-    .linear-gradient--cover-shadow{
-        width: 260px;
-        left: 0px;
-        }
-    .profile-picture {
-        width: 90px;
-        height: 90px;
-        }    
-    
-    .img3 {
-        width: 260px;
-        height: 378.925px;
-        }
-    .img6{
-        width: 260px;
-        height: 368px;
-        }
-    .img7{
-        width: 260px;
-        height: 444.125px;
-        }   
-
-    .img3, .img6, .img7 {
-        margin: 0 auto;
-        }
-    }
-
     @media screen and (max-width: 1495px) {
         .card--colorful-drawings {
             display: grid;
@@ -75,7 +24,6 @@
         .img-sunflowers {
             top: 58px;
         }
-
         .img-ocean {
             top: -13px;
         }
@@ -120,9 +68,8 @@
         .img-ocean {
             top: 0px;
         }     
+        
     }
-
-
     
     @media only screen and (max-width: 730px) and (min-width: 490px) {
         .card--colorful-drawings {
@@ -176,6 +123,13 @@
             top: -76px;
             width: 190px;
         }
+        .profile-picture {
+            left: -30px;
+            top: -30px;
+        
+            width: 100px;
+            height: 100px;
+            }
     }
 
     @media only screen and (max-width: 490px) and (min-width: 360px) {
@@ -224,6 +178,10 @@
         .img-town {
             top: -112px;
         }
+        .profile-picture { 
+            width: 90px;
+            height: 90px;
+        }    
     }
 
     @media only screen and (max-width: 360px) {
@@ -271,5 +229,9 @@
         }     
         .img-town {
             top: -120px;
+        }
+        .profile-picture {
+            width: 70px;
+            height: 70px;
         }
     }
