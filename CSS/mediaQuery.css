@@ -67,21 +67,20 @@
         }
         
         .img-khazix {
-            top: -68px;
+            top: -70px;
         }
         .img-windmill {
-            top: -38px;
+            top: -41px;
         }
         .img-sunflowers {
-            top: 57px;
+            top: 58px;
         }
 
         .img-ocean {
-            top: -11px;
+            top: -13px;
         }
-        
         .img-desert{
-            top: -23px;
+            top: -24px;
         }
         
     }
@@ -116,7 +115,7 @@
             top: 0px;
         }
         .img-windmill {
-            top: -310px;
+            top: -312px;
         }
         .img-ocean {
             top: 0px;
@@ -136,9 +135,9 @@
             "ocean khazix"
             "town windmill"
             "town .";
-            grid-template-columns: repeat(auto-fill, 190px) ;
+            grid-template-columns: repeat(auto-fill, 194px) ;
             grid-template-rows: repeat(auto-fill, 200px,);
-            gap: 5px 0px;
+            gap: 4px 0px;
             
             position: relative;
             top: 0;
@@ -151,10 +150,10 @@
             top: 0px;
         }   
         .img-sunrise {
-            width: 190px;
+            width: 191px;
         }
         .img-woods {
-            top: -60px;
+            top: -61px;
             width: 190px;
         }
         .img-sunflowers {
@@ -162,27 +161,24 @@
             width: 190px;
         }
         .img-khazix {
-            top: -92px;
+            top: -95px;
             width: 190px;
         }
         .img-windmill {
-            top: -274px;
+            top: -279px;
             width: 190px;
         }
         .img-ocean {
-            top: -66px;
+            top: -68px;
             width: 190px;
         }     
         .img-town {
-            top: -70px;
+            top: -76px;
             width: 190px;
         }
     }
 
-
-
-
-    @media only screen and (max-width: 490px) {
+    @media only screen and (max-width: 490px) and (min-width: 360px) {
         .card--colorful-drawings {
             display: grid;
             grid-template-areas: 
@@ -192,36 +188,88 @@
             "sunflowers khazix"
             "ocean khazix"
             "town windmill";
-            grid-template-columns: repeat(auto-fill, 300px) ;
+            grid-template-columns: repeat(auto-fill, 133px) ;
             grid-template-rows: repeat(auto-fill, 200px);
-            gap: 5px 0px;
+            gap: 0;
             
             position: relative;
             top: 0;
             justify-content: center;
         }        
-        .img-khazix, .img-ocean, .img-desert, .img-sunflowers, .img-woods {
+        .img-sunrise, .img-desert, .img-woods, .img-sunflowers, .img-khazix, .img-ocean, .img-windmill, .img-town {
             position: relative;
+            width: 130px;
         }
-        
         .img-desert{
             top: 0px;
         }   
-        .img-woods {
-            top: 18px;
+        .img-sunrise {
+            top: 0px;
         }
-        .img-khazix {
-            top: -42px;
+        .img-woods {
+            top: -102px;
         }
         .img-sunflowers {
-            top: 0px;
+            top: -104px;
+        }
+        .img-khazix {
+            top: -124px;
         }
         .img-windmill {
-            top: -310px;
+            top: -248px;
         }
         .img-ocean {
+            top: -108px;
+        }     
+        .img-town {
+            top: -112px;
+        }
+    }
+
+    @media only screen and (max-width: 360px) {
+        .card--colorful-drawings {
+            display: grid;
+            grid-template-areas: 
+            "sunrise desert"
+            "sunrise woods"
+            "sunflowers woods "
+            "sunflowers khazix"
+            "ocean khazix"
+            "town windmill";
+            grid-template-columns: repeat(auto-fill, 123px) ;
+            grid-template-rows: repeat(auto-fill, 200px);
+            gap: 0;
+            
+            position: relative;
+            top: 0;
+            justify-content: center;
+        }        
+        .img-sunrise, .img-desert, .img-woods, .img-sunflowers, .img-khazix, .img-ocean, .img-windmill, .img-town {
+            position: relative;
+            width: 120px;
+        }
+        .img-desert{
             top: 0px;
-        }    
-        body {
-            background: rgb(12, 0, 67);
-    }}
+        }   
+        .img-sunrise {
+            top: 0px;
+        }
+        .img-woods {
+            top: -110px;
+        }
+        .img-sunflowers {
+            top: -110px;
+        }
+        .img-khazix {
+            top: -132px;
+        }
+        .img-windmill {
+            top: -248px;
+        }
+        .img-ocean {
+            top: -114px;
+        }     
+        .img-town {
+            top: -120px;
+        }
+    }
