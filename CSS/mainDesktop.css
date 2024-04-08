@@ -120,3 +120,43 @@
     width: 290px;
     height: max-content;
     }
+
+
+
+
+
+    .open-button {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100px;
+        height: 30px;
+
+        background-color: black;
+    }
+
+
+.custom-scrollbar {
+    max-height: 100vh;
+    overflow-y: scroll;
+
+    scrollbar-color: blue green;
+    overflow-x: none;
+}    
+::-webkit-scrollbar {
+    width: 1.2em;
+    overflow-x: none;
+}
+
+::-webkit-scrollbar-track {
+    background-color: green;
+    margin-block: 0.25em;
+    border: 0.3em;
+}
+::-webkit-scrollbar-thumb {
+    background: red;
+    background: --webkit-gradient(to right, yellow), orange;
+    border-radius: 0.3em;
+}
+    
