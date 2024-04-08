@@ -18,63 +18,54 @@ function assignClassToElements() {
 }
 
 /* A function that changes colors of the scrollbar depending on the hour of the day*/
-function updateTimeBasedScrollbarStyle() {
-    const currentDate = new Date();
-    const currentHour = currentDate.getHours();
+let colorIndex = 0; // Initialize color index
 
-    let newStyle = "";
+function changeScrollbarStyle() {
+    const rainbowColors = [
+        "rgb(0, 170, 255)",     // Lighter blue (12 PM)
+        "rgb(0, 156, 10)",      // Green (1 PM)
+        "rgb(255, 255, 0)",     // Yellow (2 PM)
+        "rgb(156, 0, 0)",       // Red (3 PM)
+        "rgb(111, 0, 255)",     // Purple (4 PM)
+        "rgb(0, 0, 255)",       // Blue (5 PM)
+        "rgb(0, 156, 10)",      // Green (6 PM)
+        "rgb(255, 255, 0)",     // Yellow (7 PM)
+        "rgb(156, 0, 0)",       // Red (8 PM)
+        "rgb(111, 0, 255)",     // Purple (9 PM)
+        "rgb(0, 0, 255)",       // Blue (10 PM)
+        "rgb(0, 170, 255)"      // Lighter blue (11 PM)
+    ];
 
-    if (currentHour >= 9 && currentHour < 11) {
-        newStyle = `
-            background: rgb(0, 63, 63);
-            -webkit-box-shadow: inset 0 0 6px rgba(0, 255, 255, 0.5);
-        `;
-    } else if (currentHour >= 11 && currentHour < 13) {
-        newStyle = `
-            background: rgb(0, 63, 0);
-            -webkit-box-shadow: inset 0 0 6px rgba(0, 255, 0, 0.5);
-        `;
-    } else if (currentHour >= 13 && currentHour < 14) {
-        newStyle = `
-            background: rgb(63, 63, 0);
-            -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 0, 0.5);
-        `;
-    } else if (currentHour >= 14 && currentHour < 15) {
-        newStyle = `
-            background: rgb(255, 165, 0);
-            -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 0, 0.5);
-        `;
-    } else if (currentHour >= 15 && currentHour < 16) {
-        newStyle = `
-            background: rgb(63, 42, 0);
-            -webkit-box-shadow: inset 0 0 6px rgba(255, 165, 0, 0.5);
-        `;
-    } else if (currentHour >= 16 && currentHour < 18) {
-        newStyle = `
-            background: rgb(63, 0, 0);
-            -webkit-box-shadow: inset 0 0 6px rgba(255, 0, 0, 0.5);
-        `;
-    } else if (currentHour >= 18 && currentHour < 20) {
-        newStyle = `
-            background: rgb(63, 16, 170);
-            -webkit-box-shadow: inset 0 0 6px rgba(160, 32, 240, 0.5);
-        `;
-    } else if (currentHour >= 21 && currentHour < 22) {
-        newStyle = `
-            background: rgb(0, 0, 255);
-            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 255, 0.5);
-        `;
+    const date = new Date();
+    const hour = date.getHours();
+    let currentColorIndex;
+
+    // Calculate the index of the color based on the current hour
+    if (hour >= 12) {
+        currentColorIndex = (hour - 12) % rainbowColors.length;
+    } else {
+        currentColorIndex = hour;
     }
 
-    const styleTag = document.getElementById("scrollbar-style");
+    // Get the selected color for the background
+    const selectedBackgroundColor = rainbowColors[currentColorIndex];
 
-    if (styleTag) {
-        styleTag.innerHTML = `::-webkit-scrollbar-thumb { ${newStyle} }`;
+    // Calculate the corresponding color for the background by dividing RGB values by 3
+    const backgroundRgbValues = selectedBackgroundColor.match(/\d+/g);
+    const selectedBackgroundDividedColor = `rgb(${backgroundRgbValues[0] / 3}, ${backgroundRgbValues[1] / 3}, ${backgroundRgbValues[2] / 3})`;
+
+    // Apply the styles to the scrollbar thumb directly
+    document.documentElement.style.setProperty('--scrollbar-background-color', selectedBackgroundDividedColor);
+    document.documentElement.style.setProperty('--scrollbar-box-shadow-color', selectedBackgroundColor);
+
+    // Update color index if necessary
+    if (colorIndex !== currentColorIndex) {
+        colorIndex = currentColorIndex;
     }
 }
 
 // Call the function initially
-updateTimeBasedScrollbarStyle();
+changeScrollbarStyle();
 
-// Update every minute
-setInterval(updateTimeBasedScrollbarStyle, 60000);
+// Call the function every hour to update the colors based on the device's time
+setInterval(changeScrollbarStyle, 3600000); // 3600000 milliseconds = 1 hour
