@@ -34,30 +34,4 @@ everything everything inside it(Works globally) */
     } else {
         element.style.justifyContent = 'center'; // Apply centering
     }
-
-
-/* Testing code */
-// if (window.innerWidth >= 443 && window.innerWidth <= 773) {}
-
-
-/*     // this function makes it so everything works past it
-    var element = document.querySelector('.card--colorful-drawings');
-    var screenWidth = window.innerWidth;
-
-    // Define scaling factor and top property based on screen width
-    var scalingFactor, topValue, leftValue;
-    if (screenWidth < 773) {
-        if (element.style.transform === 'scale(0.6)') {
-            scalingFactor = 1;
-            topValue = '0px';
-        } else {
-            scalingFactor = 0.6;
-            topValue = '-300px'
-            leftValue = '0%';
-        }
-
-        // Apply transform property with the calculated scaling factor
-        element.style.transform = 'scale(' + scalingFactor + ')';
-        element.style.top = topValue;
-    } */
 }
