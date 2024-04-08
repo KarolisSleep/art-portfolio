@@ -46,19 +46,16 @@
     }
     
     
-    .card--colorful-drawings {
-    display: grid;
-    grid-template-areas: 
-    "sunrise woods town sunflowers"
-    "sunrise woods khazix sunflowers"
-    "ocean desert . sunflowers"
-    ". desert windmill sunflowers";
-    grid-template-columns: repeat(auto-fill, 300px) ;
-    grid-template-rows: repeat(auto-fill, 200px);
-    gap: 5px 0px;
-    position: initial;
-        left: initial;
-        transform: initial;
+.card--colorful-drawings {
+display: grid;
+grid-template-areas: 
+"sunrise woods town sunflowers"
+"sunrise woods khazix sunflowers"
+"ocean desert . sunflowers"
+". desert windmill sunflowers";
+grid-template-columns: repeat(auto-fill, 300px) ;
+grid-template-rows: repeat(auto-fill, 200px);
+gap: 5px 0px;
 }
 
 .img-sunrise {
@@ -125,16 +122,14 @@
 
 
 
-    .open-button {
-        position: absolute;
-        top: 0;
-        left: 0;
-
-        width: 100px;
-        height: 30px;
-
-        background-color: black;
-    }
+.open-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 30px;
+    background-color: black;
+}
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
@@ -147,9 +142,9 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(63, 0, 0);
+    background: rgb(63, 63, 0);
     border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(255, 0, 0, 0.5); 
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 0, 0.5); 
 }
 
 ::-webkit-scrollbar-track-piece:end {
