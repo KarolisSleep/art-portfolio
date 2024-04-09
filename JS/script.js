@@ -1,19 +1,19 @@
-/* A function for the container */
 function assignClassToElements() {
-    /*  Toggles on a class that makes the images appear */
+    // Toggles on a class that makes the images appear
     const images = document.querySelectorAll('.hiddingImages'); 
     images.forEach(function(image) {
         image.classList.toggle('showImages'); 
     });
 
-    /* On toggle the card centers 
-    everything inside it(Works globally) */
-    var element = document.querySelector('.card--colorful-drawings');
-    // Toggle the justify-content property
-    if (element.style.justifyContent === 'center') {
-        element.style.justifyContent = ''; // Reset to default
+    // Toggle the class on the container
+    var container = document.getElementById("container");
+    container.classList.toggle("card--colorful-drawings");
+
+    // Toggle the justify-content property for centering
+    if (container.classList.contains("card--colorful-drawings")) {
+        container.style.justifyContent = 'center'; // Apply centering
     } else {
-        element.style.justifyContent = 'center'; // Apply centering
+        container.style.justifyContent = ''; // Reset to default
     }
 }
 
@@ -24,7 +24,7 @@ function changeScrollbarStyle() {
         "rgb(0, 170, 255)",     // Lighter blue (12 PM)
         "rgb(0, 156, 10)",      // Green (1 PM)
         "rgb(255, 255, 0)",     // Yellow (2 PM)
-        "rgb(176, 0, 0)",       // Red (3 PM)
+        "rgb(235, 0, 0)",       // Red (3 PM)
         "rgb(111, 0, 255)",     // Purple (4 PM)
         "rgb(0, 0, 255)",       // Blue (5 PM)
         "rgb(0, 156, 10)",      // Green (6 PM)
