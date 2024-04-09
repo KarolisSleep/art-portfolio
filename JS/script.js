@@ -29,7 +29,7 @@ function changeScrollbarStyle() {
         "rgb(0, 0, 255)",       // Blue (5 PM)
         "rgb(0, 156, 10)",      // Green (6 PM)
         "rgb(255, 255, 0)",     // Yellow (7 PM)
-        "rgb(156, 0, 0)",       // Red (8 PM)
+        "rgb(235, 0, 0)",       // Red (8 PM)
         "rgb(111, 0, 255)",     // Purple (9 PM)
         "rgb(0, 0, 255)",       // Blue (10 PM)
         "rgb(0, 170, 255)"      // Lighter blue (11 PM)

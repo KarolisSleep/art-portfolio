@@ -130,7 +130,9 @@ gap: 5px 0px;
 
 .drawing-sections {
     position: relative;
+    width: min-content;
   }
+
   
   .drawing-sections:before {
     content: "";

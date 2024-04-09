@@ -46,6 +46,12 @@
             grid-template-rows: repeat(auto-fill, 200px);
             gap: 5px 0px;
         }        
+
+        .drawing-sections::before {
+            width: 290px;
+            height: 422.639px;
+          }
+          
         .img-khazix, .img-ocean, .img-desert, .img-sunflowers, .img-woods, .img-town {
             position: relative;
         }
