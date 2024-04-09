@@ -13,11 +13,11 @@
     <div class="linear-gradient--background-image"></div>
     <img class="background-image" src="./IMG/colorful drawings/ChaosBurst.jpg" alt="abstract drawing">
     
-    <div class="container">
+    <div id="container--sections-holder" class="container justify-content-start">
         <img class="profile-picture" src="./IMG/colorful drawings/Sunrise.jpg" alt="chaotic abstract drawing destruction">
 
-        <div id="container" class="container2">
-            <div onclick="assignClassToElements()" class="drawing-sections">
+        <div id="colorful-drawings--container" class="colorful-drawings--container">
+            <div onclick="openColorfulDrawingsContainer()" class="drawing-sections">
                 <img class="img-sunrise" src="./IMG/colorful drawings/Sunrise.jpg" alt="An abstract drawing made out of tiny details. A sunrise, a bursting volcano and a centipede in hidding.">
             </div>
             <img class="hiddingImages img-woods" src="./IMG/colorful drawings/Woods.jpg" alt="Woods colored pretty, showing during the night.">
@@ -28,12 +28,17 @@
             <img class="hiddingImages img-desert" src="./IMG/colorful drawings/Desert.jpg" alt="Desert, ruins - drawn during a panic attack in school."></img>
             <img class="hiddingImages img-windmill" src="./IMG/colorful drawings/Windmill.jpg" alt="Lonely, broken but somewhat persistent windmill."></img>
         </div>
+
+        <div id="pokemon-drawings--container" class="pokemon-drawings--container">
+            <div onclick="openPokemonDrawingsContainer()" class="container--pokemon-img">
+                <img class="cyndaquil" src="./IMG/pokemon drawings/Cyndaquil.jpg">
+            </div>
+            <img class="img-pokemon" src="/IMG/pokemon drawings/Zoroark.jpg" alt="Zoroark">
+            <img class="img-pokemon" src="/IMG/pokemon drawings/Sylveon.png" alt="Sylveon">
+            <img class="img-pokemon" src="/IMG/pokemon drawings/Darkrai.jpg" alt="Darkrai">
+            <img class="img-pokemon" src="/IMG/pokemon drawings/Chandelure and Annihilape.jpg" alt="Darkrai">
+        </div>
         
-        <!-- <div onclick="assignClassToElements()" class="open-button"> -->
-            <!-- <div class="drawing-sections"></div> -->
-            <!-- What's new?
-            I am working on a black button and a red scrollbar -->
-            
         </div>        
     </div>
             

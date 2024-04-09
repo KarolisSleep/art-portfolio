@@ -1,4 +1,4 @@
-function assignClassToElements() {
+function openColorfulDrawingsContainer() {
     // Toggles on a class that makes the images appear
     const images = document.querySelectorAll('.hiddingImages'); 
     images.forEach(function(image) {
@@ -6,7 +6,7 @@ function assignClassToElements() {
     });
 
     // Toggle the class on the container
-    var container = document.getElementById("container");
+    var container = document.getElementById("colorful-drawings--container");
     container.classList.toggle("card--colorful-drawings");
 
     // Toggle the justify-content property for centering
@@ -15,7 +15,51 @@ function assignClassToElements() {
     } else {
         container.style.justifyContent = ''; // Reset to default
     }
+    
+    var container = document.getElementById("container--sections-holder");
+    
+    if (container.classList.contains("justify-content-start")) {
+        // If the class is present, remove it
+        container.classList.remove("justify-content-start");
+    } else {
+        // If the class is not present, add it
+        container.classList.add("justify-content-start");
+    }
+
+    var container = document.querySelector(".pokemon-drawings--container");
+    
+    if (container.style.position !== "absolute" || container.style.zIndex !== "-10" || container.style.transform !== "scale(0)") {
+        container.style.position = "absolute";
+        container.style.zIndex = "-10";
+        container.style.transform = "scale(0)";
+    } else {
+        container.style.position = "";
+        container.style.zIndex = "";
+        container.style.transform = "";
+    }
 }
+    
+function openPokemonDrawingsContainer() {
+    // Toggles on a class that makes the images appear
+    const images = document.querySelectorAll('.img-pokemon'); 
+    images.forEach(function(image) {
+        image.classList.toggle('showImages'); 
+    });
+       
+    var container = document.querySelector(".colorful-drawings--container");
+
+    if (container.style.position !== "absolute" || container.style.zIndex !== "-10" || container.style.transform !== "scale(0)") {
+        container.style.position = "absolute";
+        container.style.zIndex = "-10";
+        container.style.transform = "scale(0)";
+    } else {
+        container.style.position = "";
+        container.style.zIndex = "";
+        container.style.transform = "";
+    }
+}
+
+
 
 let colorIndex = 0; // Initialize color index
 
