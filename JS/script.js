@@ -26,17 +26,40 @@ function openColorfulDrawingsContainer() {
         container.classList.add("justify-content-start");
     }
 
-    var container = document.querySelector(".pokemon-drawings--container");
+    var containers = document.querySelectorAll(".pokemon-drawings--container, .unique-drawings--container");
+
+    containers.forEach(function(container) {
+        if (container.style.position !== "absolute" || container.style.zIndex !== "-10" || container.style.transform !== "scale(0)") {
+            container.style.position = "absolute";
+            container.style.zIndex = "-10";
+            container.style.transform = "scale(0)";
+        } else {
+            container.style.position = "";
+            container.style.zIndex = "";
+            container.style.transform = "";
+        }
+    });
+
+    var img = document.querySelector(".img-sunrise");
+    img.src = "./IMG/colorful drawings/Sunrise.jpg";
+
+    var img = document.querySelector(".img-woods");
+    img.src = "./IMG/colorful drawings/Woods.jpg";
     
-    if (container.style.position !== "absolute" || container.style.zIndex !== "-10" || container.style.transform !== "scale(0)") {
-        container.style.position = "absolute";
-        container.style.zIndex = "-10";
-        container.style.transform = "scale(0)";
-    } else {
-        container.style.position = "";
-        container.style.zIndex = "";
-        container.style.transform = "";
-    }
+    var img = document.querySelector(".img-town");
+    img.src = "./IMG/colorful drawings/Town.jpg";
+    
+    var img = document.querySelector(".img-desert");
+    img.src = "./IMG/colorful drawings/Desert.jpg";
+    
+    var img = document.querySelector(".img-khazix");
+    img.src = "./IMG/colorful drawings/KhaZix.jpg";
+    
+    var img = document.querySelector(".img-sunflowers");
+    img.src = "./IMG/colorful drawings/Sunflowers.jpg";
+    
+    var img = document.querySelector(".img-windmill");
+    img.src = "./IMG/colorful drawings/Windmill.jpg";
 }
     
 function openPokemonDrawingsContainer() {
@@ -45,21 +68,64 @@ function openPokemonDrawingsContainer() {
     images.forEach(function(image) {
         image.classList.toggle('showImages'); 
     });
-       
-    var container = document.querySelector(".colorful-drawings--container");
+    
+    // Select both containers
+    var containers = document.querySelectorAll('.colorful-drawings--container, .unique-drawings--container');
+    
+    // Loop through each container
+    containers.forEach(function(container) {
+        if (container.style.position !== "absolute" || container.style.zIndex !== "-10" || container.style.transform !== "scale(0)") {
+            container.style.position = "absolute";
+            container.style.zIndex = "-10";
+            container.style.transform = "scale(0)";
+        } else {
+            container.style.position = "";
+            container.style.zIndex = "";
+            container.style.transform = "";
+        }
+    });
 
-    if (container.style.position !== "absolute" || container.style.zIndex !== "-10" || container.style.transform !== "scale(0)") {
-        container.style.position = "absolute";
-        container.style.zIndex = "-10";
-        container.style.transform = "scale(0)";
-    } else {
-        container.style.position = "";
-        container.style.zIndex = "";
-        container.style.transform = "";
-    }
+    // Update image sources
+    document.querySelector(".img-zoroark").src = "./IMG/pokemon drawings/Zoroark.jpg";
+    document.querySelector(".img-sylveon").src = "./IMG/pokemon drawings/Sylveon.png";
+    document.querySelector(".img-darkrai").src = "./IMG/pokemon drawings/Darkrai.jpg";
+    document.querySelector(".img-ghosts").src = "./IMG/pokemon drawings/Chandelure and Annihilape.jpg";
+};
+
+function openUniqueDrawingsContainer() {
+    // Toggles on a class that makes the images appear
+    const images = document.querySelectorAll('.img-section3'); 
+    images.forEach(function(image) {
+        image.classList.toggle('showImages'); 
+    });
+    
+    // Select both containers
+    var containers = document.querySelectorAll('.colorful-drawings--container, .pokemon-drawings--container');
+    
+    // Loop through each container
+    containers.forEach(function(container) {
+        if (container.style.position !== "absolute" || container.style.zIndex !== "-10" || container.style.transform !== "scale(0)") {
+            container.style.position = "absolute";
+            container.style.zIndex = "-10";
+            container.style.transform = "scale(0)";
+        } else {
+            container.style.position = "";
+            container.style.zIndex = "";
+            container.style.transform = "";
+        }
+    });
+    document.querySelector(".img-kingler").src = "./IMG/simpler drawings/Kingler.jpg";
+    document.querySelector(".img-alex").src = "./IMG/simpler drawings/Alex Mercer.jpg";
+    document.querySelector(".img-trees").src = "./IMG/simpler drawings/Trees.jpg";
+    document.querySelector(".img-whale").src = "./IMG/simpler drawings/Manic whale.jpg";
+    document.querySelector(".img-trio").src = "./IMG/simpler drawings/Revenge Wrath Apathy.jpg";
+    document.querySelector(".img-eye").src = "./IMG/simpler drawings/Teary eye.jpg";
+    document.querySelector(".img-paradise").src = "./IMG/simpler drawings/Paradise.jpg";
+    document.querySelector(".img-hurt2").src = "./IMG/simpler drawings/Hurt2.jpg";
+    document.querySelector(".img-angel").src = "./IMG/simpler drawings/Angel.jpg";
+    document.querySelector(".img-city").src = "./IMG/simpler drawings/City.jpg";
+
 }
-
-
 
 let colorIndex = 0; // Initialize color index
 
