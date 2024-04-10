@@ -102,7 +102,7 @@
         .drawing-sections::before {
             width: 191px;
             height: 278.350px;
-          }
+        }
 
         .img-khazix, .img-ocean, .img-desert, .img-sunflowers, .img-woods, .img-town {
             position: relative;
@@ -145,6 +145,17 @@
             width: 100px;
             height: 100px;
             }
+
+            .cyndaquil, .img-pokemon, .img-section3 {
+                width:  123px;
+                height: 123px;
+            }
+    
+            .container--pokemon-img:before, .container--unique-img:before {
+                width:  120px;
+                height: 120px;
+                left: -1px;
+              }
     }
 
     @media only screen and (max-width: 490px) and (min-width: 360px) {        
@@ -209,7 +220,18 @@
             left: -30px;
             width: 90px;
             height: 90px;
-        }    
+        }
+
+        .cyndaquil, .img-pokemon, .img-section3 {
+            width:  83px;
+            height: 83px;
+        }
+
+        .container--pokemon-img:before, .container--unique-img:before {
+            width:  80px;
+            height: 80px;
+            left: -1px;
+          }
     }
     
     @media only screen and (max-width: 360px) {
@@ -235,7 +257,6 @@
           width: 120px;
           height: 174.867px;
         }
-
         .img-sunrise, .img-desert, .img-woods, .img-sunflowers, .img-khazix, .img-ocean, .img-windmill, .img-town {
             position: relative;
             width: 120px;
@@ -278,4 +299,15 @@
             width: 70px;
             height: 70px;
         }
+
+        .cyndaquil, .img-pokemon, .img-section3 {
+            width:  77px;
+            height: 77px;
+        }
+
+        .container--pokemon-img:before, .container--unique-img:before {
+            width:  77px;
+            height: 77px;
+          }
+
     }
