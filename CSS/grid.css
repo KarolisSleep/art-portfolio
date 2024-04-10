@@ -2,7 +2,6 @@
 
     .grid {
         display: grid;
-        /* grid-template-columns: 294px 202px; */
         grid-template-columns: min-content min-content min-content;
     
         grid-template-rows: min-content, min-content;

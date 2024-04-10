@@ -179,23 +179,6 @@ changeScrollbarStyle();
 // Call the function every hour to update the colors based on the device's time
 setInterval(changeScrollbarStyle, 3600000); // 3600000 milliseconds = 1 hour
 
-// Function to detect if device has hover capability
-function hasHoverCapability() {
-    // Check if device has a pointing device (like a mouse)
-    return matchMedia('(hover: hover)').matches;
+if ('ontouchstart' in window || navigator.maxTouchPoints) {
+    document.documentElement.classList.add('touchscreen');
 }
-
-// Function to toggle hover effect based on device capability
-function toggleHoverEffect() {
-    const elements = document.querySelectorAll('.container--pokemon-img, .container--unique-img, .container--colorful-img');
-    elements.forEach(element => {
-        if (hasHoverCapability()) {
-            element.classList.add('hover-capability');
-        } else {
-            element.classList.remove('hover-capability');
-        }
-    });
-}
-
-// Call the function when the page loads
-window.addEventListener('load', toggleHoverEffect);
