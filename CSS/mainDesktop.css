@@ -225,10 +225,9 @@ gap: 5px 0px;
 /* Apply hover effect only when hover-capability class is present */
 .hover-capability .container--pokemon-img:before,
 .hover-capability .container--unique-img:before,
-.hover-capability .container--colorful-img:before {
+.hover-capability .drawing-sections:before {
     opacity: 1;
 }
-
 /* Custom scrollbar */
 ::-webkit-scrollbar {
     width: 12px;
