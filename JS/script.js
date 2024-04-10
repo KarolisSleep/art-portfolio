@@ -1,3 +1,8 @@
+function toggleGridClass() {
+    var parentContainer = document.getElementById("container--sections-holder");
+    parentContainer.classList.toggle("grid");
+}
+
 function openColorfulDrawingsContainer() {
     // Toggles on a class that makes the images appear
     const images = document.querySelectorAll('.hiddingImages'); 
@@ -16,16 +21,6 @@ function openColorfulDrawingsContainer() {
         container.style.justifyContent = ''; // Reset to default
     }
     
-    var container = document.getElementById("container--sections-holder");
-    
-    if (container.classList.contains("justify-content-start")) {
-        // If the class is present, remove it
-        container.classList.remove("justify-content-start");
-    } else {
-        // If the class is not present, add it
-        container.classList.add("justify-content-start");
-    }
-
     var containers = document.querySelectorAll(".pokemon-drawings--container, .unique-drawings--container");
 
     containers.forEach(function(container) {
@@ -60,6 +55,8 @@ function openColorfulDrawingsContainer() {
     
     var img = document.querySelector(".img-windmill");
     img.src = "./IMG/colorful drawings/Windmill.jpg";
+
+    toggleGridClass();
 }
     
 function openPokemonDrawingsContainer() {
@@ -90,6 +87,8 @@ function openPokemonDrawingsContainer() {
     document.querySelector(".img-sylveon").src = "./IMG/pokemon drawings/Sylveon.png";
     document.querySelector(".img-darkrai").src = "./IMG/pokemon drawings/Darkrai.jpg";
     document.querySelector(".img-ghosts").src = "./IMG/pokemon drawings/Chandelure and Annihilape.jpg";
+
+    toggleGridClass();
 };
 
 function openUniqueDrawingsContainer() {
@@ -125,6 +124,7 @@ function openUniqueDrawingsContainer() {
     document.querySelector(".img-angel").src = "./IMG/simpler drawings/Angel.jpg";
     document.querySelector(".img-city").src = "./IMG/simpler drawings/City.jpg";
 
+    toggleGridClass();
 }
 
 let colorIndex = 0; // Initialize color index

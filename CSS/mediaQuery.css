@@ -32,7 +32,7 @@
         }
         
     }
-    @media only screen and (max-width: 1113px) and (min-width: 730px) {
+    @media only screen and (max-width: 1113px) and (min-width: 880px) {
         .card--colorful-drawings {
             display: grid;
             grid-template-areas: 
@@ -46,7 +46,6 @@
             grid-template-rows: repeat(auto-fill, 200px);
             gap: 5px 0px;
         }        
-
         .drawing-sections::before {
             width: 290px;
             height: 422.639px;
@@ -141,21 +140,21 @@
         .profile-picture {
             left: -30px;
             top: -30px;
-        
+            
             width: 100px;
             height: 100px;
-            }
+        }
+        
+        .cyndaquil, .img-pokemon, .img-section3 {
+            width:  119px;
+            height: 119px;
+        }
 
-            .cyndaquil, .img-pokemon, .img-section3 {
-                width:  123px;
-                height: 123px;
-            }
-    
-            .container--pokemon-img:before, .container--unique-img:before {
-                width:  120px;
-                height: 120px;
-                left: -1px;
-              }
+        .container--pokemon-img:before, .container--unique-img:before {
+            width:  120px;
+            height: 120px;
+            left: -1px;
+        }
     }
 
     @media only screen and (max-width: 490px) and (min-width: 360px) {        
@@ -223,8 +222,8 @@
         }
 
         .cyndaquil, .img-pokemon, .img-section3 {
-            width:  83px;
-            height: 83px;
+            width:  79px;
+            height: 79px;
         }
 
         .container--pokemon-img:before, .container--unique-img:before {

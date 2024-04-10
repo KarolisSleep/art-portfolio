@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./CSS/global.css">
     <link rel="stylesheet" href="./CSS/mainDesktop.css">
     <link rel="stylesheet" href="./CSS/mediaQuery.css">
+    <link rel="stylesheet" href="./CSS/grid.css">
     <title>Sleep's art portfolio</title>
     <link rel="icon" href="./IMG/colorful drawings/favicon.png">
 </head>
@@ -13,10 +14,10 @@
     <div class="linear-gradient--background-image"></div>
     <img class="background-image" src="./IMG/colorful drawings/ChaosBurst.jpg" alt="abstract drawing">
     
-    <div id="container--sections-holder" class="container justify-content-start">
+    <div id="container--sections-holder" class="container grid">
         <img class="profile-picture" src="./IMG/colorful drawings/Sunrise.jpg" alt="chaotic abstract drawing destruction">
 
-        <div id="colorful-drawings--container" class="colorful-drawings--container">
+        <div id="colorful-drawings--container" class="colorful-drawings--container justify-content-start">
                 <div onclick="openColorfulDrawingsContainer()" class="drawing-sections">
                     <img class="img-sunrise" src="./IMG/colorful drawings/Sunrise.jpg" alt="An abstract drawing made out of tiny details. A sunrise, a bursting volcano and a centipede in hidding.">
                 </div>
@@ -29,7 +30,7 @@
             <img class="hiddingImages img-windmill" src="./IMG/colorful drawings/Windmill.jpg" alt="Lonely, broken but somewhat persistent windmill."></img>
         </div>
 
-        <div id="pokemon-drawings--container" class="pokemon-drawings--container">
+        <div id="pokemon-drawings--container" class="pokemon-drawings--container justify-content-start">
             <div onclick="openPokemonDrawingsContainer()" class="container--pokemon-img">
                 <img class="cyndaquil" src="./IMG/pokemon drawings/Cyndaquil.jpg">
             </div>
@@ -39,7 +40,7 @@
             <img class="img-pokemon img-ghosts" src="" alt="Chandelure and Annihilape">
         </div>
         
-        <div id="unique-drawings--container" class="unique-drawings--container">
+        <div id="unique-drawings--container" class="unique-drawings--container justify-content-start">
             <div onclick="openUniqueDrawingsContainer()" class="container--unique-img">
                 <img class="cyndaquil" src="./IMG/simpler drawings/A call for help.jpg" alt="A crab at the end of its ropes">
             </div>
