@@ -17,7 +17,6 @@ function assignClassToElements() {
     }
 }
 
-/* A function that changes colors of the scrollbar depending on the hour of the day*/
 let colorIndex = 0; // Initialize color index
 
 function changeScrollbarStyle() {
@@ -25,7 +24,7 @@ function changeScrollbarStyle() {
         "rgb(0, 170, 255)",     // Lighter blue (12 PM)
         "rgb(0, 156, 10)",      // Green (1 PM)
         "rgb(255, 255, 0)",     // Yellow (2 PM)
-        "rgb(156, 0, 0)",       // Red (3 PM)
+        "rgb(176, 0, 0)",       // Red (3 PM)
         "rgb(111, 0, 255)",     // Purple (4 PM)
         "rgb(0, 0, 255)",       // Blue (5 PM)
         "rgb(0, 156, 10)",      // Green (6 PM)
