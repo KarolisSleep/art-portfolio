@@ -326,7 +326,7 @@
             opacity: 0; /* Or any other styling to remove the pseudo-element */
         }
     }
-    @media only screen and (max-width: 1500px) and (min-width: 732px) {
+    @media only screen and (max-width: 9999px) and (min-width: 732px) {
 
         .container--colorful-img:before {
             content: "";
