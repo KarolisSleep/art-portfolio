@@ -138,12 +138,12 @@ gap: 5px 0px;
     height: max-content;
 }
 
-.drawing-sections {
+.colorful-drawings--img {
     position: relative;
     width: min-content;
   }
 
-.drawing-sections:before {
+.container--colorful-img:before {
   content: "";
   position: absolute;
   top: 0;
@@ -160,11 +160,6 @@ gap: 5px 0px;
   transition: opacity 0.3s ease;
 }
 
-.drawing-sections:hover:before {
-  opacity: 1;
-}
-
-
 .cyndaquil {
     width:  198px;
     height: 198px;
@@ -178,6 +173,10 @@ gap: 5px 0px;
     object-fit: contain;
 }
 
+.img-ghosts {
+    border: none;
+}
+
 .img-section3 {
     display: none;
     width: 200px;
@@ -185,14 +184,14 @@ gap: 5px 0px;
     object-fit: contain;
 }
 
-.pokemon-drawings--container, .unique-drawings--container, .unique-drawings--container {
+.pokemon-drawings--container, .unique-drawings--container {
     display: flex;
     justify-content: start;
     gap: 3px;
     flex-wrap: wrap;
 }
 
-.container--pokemon-img, .container--unique-img {
+.container--pokemon-img, .container--unique-img, .container--colorful-img {
     position: relative;
     width: min-content;
     height: min-content;
@@ -215,12 +214,19 @@ gap: 5px 0px;
   transition: opacity 0.3s ease;
 }
 
-.container--pokemon-img:hover::before, .container--unique-img:hover::before, .drawing-sections:hover::before {
+.container--pokemon-img:hover::before, .container--unique-img:hover::before, .container--colorful-img:hover::before {
   opacity: 1;
 }
 
 .showImages{
     display: block;
+}
+
+/* Apply hover effect only when hover-capability class is present */
+.hover-capability .container--pokemon-img:before,
+.hover-capability .container--unique-img:before,
+.hover-capability .container--colorful-img:before {
+    opacity: 1;
 }
 
 /* Custom scrollbar */
