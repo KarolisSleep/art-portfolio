@@ -5,7 +5,6 @@
     position: fixed;
     z-index: 10;
     background: rgb(0,0,0);
-    background: rgb(0,0,0);
     background: -moz-linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(5,5,6,0.5411414565826331) 0%, rgba(24,25,26,1) 90%);
     background: -webkit-linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(5,5,6,0.5411414565826331) 0%, rgba(24,25,26,1) 90%);
     background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(5,5,6,0.5411414565826331) 0%, rgba(24,25,26,1) 90%);
@@ -20,17 +19,16 @@
     position: fixed;
     z-index: 0;
 }
-
 .profile-picture {
     position: absolute;
     left: -60px;
-    top:-40px;
-    
-    width:140px;
+    top: -40px;
+    width: 140px;
     height: 140px;
     border-radius: 50%;
     object-fit: cover;
     z-index: 15;
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
 }
 
 .profile-picture, .container, .img-sunrise, .img-woods, 
