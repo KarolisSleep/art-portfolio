@@ -1,8 +1,10 @@
+/* Supports healthy layouts */
 function toggleGridClass() {
     var parentContainer = document.getElementById("container--sections-holder");
     parentContainer.classList.toggle("grid");
 }
 
+/* First container */
 function openColorfulDrawingsContainer() {
     // Toggles on a class that makes the images appear
     const images = document.querySelectorAll('.hiddingImages');
@@ -59,6 +61,7 @@ function openColorfulDrawingsContainer() {
     toggleGridClass();
 }
 
+/* Second container */
 function openPokemonDrawingsContainer() {
     // Toggles on a class that makes the images appear
     const images = document.querySelectorAll('.img-pokemon');
@@ -91,6 +94,7 @@ function openPokemonDrawingsContainer() {
     toggleGridClass();
 };
 
+/* Third container. */
 function openUniqueDrawingsContainer() {
     // Toggles on a class that makes the images appear
     const images = document.querySelectorAll('.img-section3');
@@ -127,6 +131,7 @@ function openUniqueDrawingsContainer() {
     toggleGridClass();
 }
 
+/* This code helps the custom scrollbar function. */
 let colorIndex = 0; // Initialize color index
 
 function changeScrollbarStyle() {
@@ -179,6 +184,7 @@ changeScrollbarStyle();
 // Call the function every hour to update the colors based on the device's time
 setInterval(changeScrollbarStyle, 3600000); // 3600000 milliseconds = 1 hour
 
+/* Makes it so screen rotating is set and ultimately disabled. */
 window.addEventListener("orientationchange", function () {
     // Check if the device is in landscape mode
     if (window.orientation === 90 || window.orientation === -90) {
