@@ -132,7 +132,7 @@
             }
     }
 
-    @media only screen and (max-width: 490px) and (min-width: 360px) {
+    @media only screen and (max-width: 490px) and (min-width: 360px) {        
         .card--colorful-drawings {
             display: grid;
             grid-template-areas: 
