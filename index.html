@@ -15,12 +15,13 @@
     <img class="background-image" src="./IMG/colorful drawings/ChaosBurst.jpg" alt="abstract drawing">
     
     <div id="container--sections-holder" class="container grid">
-        <div class="profile-picture-holder"><img class="profile-picture" src="./IMG/colorful drawings/Sunrise.jpg" alt="chaotic abstract drawing destruction"></div>
+        <div onclick="toggleAboutMe(), checkAndToggleContainer()" class="profile-picture-holder"><img class="profile-picture" src="./IMG/colorful drawings/Sunrise.jpg" alt="chaotic abstract drawing destruction"></div>
 
-
+        <div class="about-me-section"></div>
         <div id="colorful-drawings--container" class="colorful-drawings--container justify-content-start">
             <div onclick="openColorfulDrawingsContainer()" class="container--colorful-img">
                 <img class="img-sunrise" src="./IMG/colorful drawings/Sunrise.jpg" alt="An abstract drawing made out of tiny details. A sunrise, a bursting volcano and a centipede in hidding.">
+                <i class="fa-solid fa-camera light-color"><span> </span>+8<div class="shadow-effect"></div></i>
             </div>
             <img class="hiddingImages img-woods" src="" alt="Woods colored pretty, showing during the night.">
             <img class="hiddingImages img-town" src="./IMG/colorful drawings/Town.jpg" alt="Inspired by Vincent Van Gogh's painting - The Starry Night."></img>
@@ -34,6 +35,7 @@
         <div id="pokemon-drawings--container" class="pokemon-drawings--container justify-content-start">
             <div onclick="openPokemonDrawingsContainer()" class="container--pokemon-img">
                 <img class="cyndaquil" src="./IMG/pokemon drawings/Cyndaquil.jpg">
+                <i class="fa-solid fa-camera dark-color"><span> </span>+5</i>
             </div>
             <img class="img-pokemon img-zoroark" src="" alt="Zoroark">
             <img class="img-pokemon img-sylveon" src="" alt="Sylveon">
@@ -44,6 +46,7 @@
         <div id="unique-drawings--container" class="unique-drawings--container justify-content-start">
             <div onclick="openUniqueDrawingsContainer()" class="container--unique-img">
                 <img class="cyndaquil" src="./IMG/simpler drawings/A call for help.jpg" alt="A crab at the end of its ropes">
+                <i class="fa-solid fa-camera dark-color"><span> </span>+11</i>
             </div>
             <img class="img-section3 img-kingler" src="" alt="Kingler">
             <img class="img-section3 img-alex" src="" alt="Alex Mercer">
@@ -59,5 +62,6 @@
     </div>
             
     <script src="./JS/script.js"></script>
+    <script src="https://kit.fontawesome.com/02c3ab197e.js" crossorigin="anonymous"></script>
 </body>
 </html>

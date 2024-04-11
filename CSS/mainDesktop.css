@@ -47,6 +47,58 @@
     border: 3px solid var(--border-color);
 }
 
+.about-me-section, .profile-picture-holder {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.about-me-section__animation {
+    position: absolute;
+    width: 0px;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 14;
+    background-color: var(--secondary-body-background);
+    border: 3px solid var(--border-color);
+    animation: openingAnimation 2s forwards;
+}
+
+@keyframes openingAnimation {
+    0% {
+        height: 0;
+    }
+    40% {
+        height: 80%;
+        width: 0%;
+    }
+    100% {
+        height: 80%;
+        width: 80%;
+    }
+}
+
+
+@keyframes darkening2 {
+    50% {
+        background-color: transparent;
+    }
+    100% {
+    background-color: rgba(12, 13, 14, 0.5);
+    border: transparent;
+    }
+}
+
+@keyframes containerBorderRemoveAnimation {
+    50% {
+        border: 4px solid var(--border-color);
+    }
+    100% {
+        border: 4px solid rgba(12, 13, 14, 0.5);
+    }
+}
+
 .container {
     width: 80vw;
     height: max-content;
@@ -60,7 +112,53 @@
     z-index: 15;
     min-width: 264px;
     max-width: 1190px;
+    border: 4px solid var(--border-color);
+}
 
+.containerBorderRemoveAnimation__animation {
+    animation: containerBorderRemoveAnimation 4s forwards;
+}
+
+.background--darken::before {
+    content: ""; /* Required for pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 10; 
+    animation: darkening2 4s forwards;
+    border: transparent;
+}
+
+.fa-solid {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+}
+
+.dark-color {
+    color: black;
+}
+.light-color {
+    color: white;
+}
+
+.shadow-effect {
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    width: 70px;
+    height: 40px;
+    background: linear-gradient(to top left, rgba(0, 0, 0, 0.8), transparent), /* Dark linear gradient */
+                        radial-gradient(circle at bottom right, rgba(0, 0, 0, 1), transparent); /* Circular gradient */
+            background-origin: border-box; /* Ensure background starts from border */
+            background-clip: content-box, border-box; /* Clip background to content and border boxes */
+            background-origin: border-box; /* Ensure background starts from border */
+            background-clip: content-box, content-box, border-box; /* Clip background to content and border boxes */
+            border-top-left-radius: 100px;
+            filter: blur(5px); /* Blur effect */
 }
 
 .grid {
@@ -161,7 +259,6 @@
 .hiddingImages {
     display: none;
 }
-
 
 .img-sunrise,
 .img-woods,

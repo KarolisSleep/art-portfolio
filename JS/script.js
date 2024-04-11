@@ -1,7 +1,43 @@
+/* If the profile icon is clicked while a section is open the section closes immediately */
+function checkAndToggleContainer() {
+    const colorfulContainer = document.querySelector('.colorful-drawings--container');
+    const pokemonContainer = document.querySelector('.pokemon-drawings--container');
+    const uniqueContainer = document.querySelector('.unique-drawings--container');
+
+    if (containsShowImages(colorfulContainer)) {
+        openColorfulDrawingsContainer(); // Toggle off
+    } else if (containsShowImages(pokemonContainer)) {
+        openPokemonDrawingsContainer(); // Toggle off
+    } else if (containsShowImages(uniqueContainer)) {
+        openUniqueDrawingsContainer(); // Toggle off
+    }
+}
+
+function containsShowImages(container) {
+    if (!container) return false;
+    const children = container.children;
+    for (let i = 0; i < children.length; i++) {
+        if (children[i].classList.contains('showImages')) {
+            return true;
+        }
+    }
+    return false;
+}
+
 /* Supports healthy layouts */
 function toggleGridClass() {
     var parentContainer = document.getElementById("container--sections-holder");
     parentContainer.classList.toggle("grid");
+}
+
+/* A function upon interacting with the profile icon */
+function toggleAboutMe() {
+    var aboutMeSection = document.querySelector('.about-me-section');
+    aboutMeSection.classList.toggle('about-me-section__animation');
+
+    var container = document.getElementById('container--sections-holder');
+    container.classList.toggle('background--darken');
+    container.classList.toggle('containerBorderRemoveAnimation__animation');
 }
 
 /* First container */
