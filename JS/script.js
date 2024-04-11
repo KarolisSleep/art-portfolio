@@ -5,9 +5,9 @@ function toggleGridClass() {
 
 function openColorfulDrawingsContainer() {
     // Toggles on a class that makes the images appear
-    const images = document.querySelectorAll('.hiddingImages'); 
-    images.forEach(function(image) {
-        image.classList.toggle('showImages'); 
+    const images = document.querySelectorAll('.hiddingImages');
+    images.forEach(function (image) {
+        image.classList.toggle('showImages');
     });
 
     // Toggle the class on the container
@@ -20,10 +20,10 @@ function openColorfulDrawingsContainer() {
     } else {
         container.style.justifyContent = ''; // Reset to default
     }
-    
+
     var containers = document.querySelectorAll(".pokemon-drawings--container, .unique-drawings--container");
 
-    containers.forEach(function(container) {
+    containers.forEach(function (container) {
         if (container.style.position !== "absolute" || container.style.zIndex !== "-10" || container.style.transform !== "scale(0)") {
             container.style.position = "absolute";
             container.style.zIndex = "-10";
@@ -40,37 +40,37 @@ function openColorfulDrawingsContainer() {
 
     var img = document.querySelector(".img-woods");
     img.src = "./IMG/colorful drawings/Woods.jpg";
-    
+
     var img = document.querySelector(".img-town");
     img.src = "./IMG/colorful drawings/Town.jpg";
-    
+
     var img = document.querySelector(".img-desert");
     img.src = "./IMG/colorful drawings/Desert.jpg";
-    
+
     var img = document.querySelector(".img-khazix");
     img.src = "./IMG/colorful drawings/KhaZix.jpg";
-    
+
     var img = document.querySelector(".img-sunflowers");
     img.src = "./IMG/colorful drawings/Sunflowers.jpg";
-    
+
     var img = document.querySelector(".img-windmill");
     img.src = "./IMG/colorful drawings/Windmill.jpg";
 
     toggleGridClass();
 }
-    
+
 function openPokemonDrawingsContainer() {
     // Toggles on a class that makes the images appear
-    const images = document.querySelectorAll('.img-pokemon'); 
-    images.forEach(function(image) {
-        image.classList.toggle('showImages'); 
+    const images = document.querySelectorAll('.img-pokemon');
+    images.forEach(function (image) {
+        image.classList.toggle('showImages');
     });
-    
+
     // Select both containers
     var containers = document.querySelectorAll('.colorful-drawings--container, .unique-drawings--container');
-    
+
     // Loop through each container
-    containers.forEach(function(container) {
+    containers.forEach(function (container) {
         if (container.style.position !== "absolute" || container.style.zIndex !== "-10" || container.style.transform !== "scale(0)") {
             container.style.position = "absolute";
             container.style.zIndex = "-10";
@@ -93,16 +93,16 @@ function openPokemonDrawingsContainer() {
 
 function openUniqueDrawingsContainer() {
     // Toggles on a class that makes the images appear
-    const images = document.querySelectorAll('.img-section3'); 
-    images.forEach(function(image) {
-        image.classList.toggle('showImages'); 
+    const images = document.querySelectorAll('.img-section3');
+    images.forEach(function (image) {
+        image.classList.toggle('showImages');
     });
-    
+
     // Select both containers
     var containers = document.querySelectorAll('.colorful-drawings--container, .pokemon-drawings--container');
-    
+
     // Loop through each container
-    containers.forEach(function(container) {
+    containers.forEach(function (container) {
         if (container.style.position !== "absolute" || container.style.zIndex !== "-10" || container.style.transform !== "scale(0)") {
             container.style.position = "absolute";
             container.style.zIndex = "-10";
@@ -179,6 +179,13 @@ changeScrollbarStyle();
 // Call the function every hour to update the colors based on the device's time
 setInterval(changeScrollbarStyle, 3600000); // 3600000 milliseconds = 1 hour
 
-if ('ontouchstart' in window || navigator.maxTouchPoints) {
-    document.documentElement.classList.add('touchscreen');
-}
+window.addEventListener("orientationchange", function () {
+    // Check if the device is in landscape mode
+    if (window.orientation === 90 || window.orientation === -90) {
+        // If it's in landscape mode, rotate the viewport back to portrait
+        document.body.style.transform = "rotate(-90deg)";
+    } else {
+        // If it's in portrait mode, reset the rotation
+        document.body.style.transform = "none";
+    }
+});
