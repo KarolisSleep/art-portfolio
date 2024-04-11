@@ -5,8 +5,11 @@
     position: fixed;
     z-index: 10;
     background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, 
-    rgba(5,5,6,0.541) 0%, rgba(24,25,26,1) 90%);
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(5,5,6,0.5411414565826331) 0%, rgba(24,25,26,1) 90%);
+    background: -webkit-linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(5,5,6,0.5411414565826331) 0%, rgba(24,25,26,1) 90%);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(5,5,6,0.5411414565826331) 0%, rgba(24,25,26,1) 90%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#18191a",GradientType=1);
 }
 
 .background-image {
