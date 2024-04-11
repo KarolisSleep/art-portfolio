@@ -262,11 +262,10 @@
           height: 174.867px;
         }
         .img-sunrise {
-            position: relative;
-            width: 120px;
             height: 174.867px;
         }
-        .img-desert, .img-woods, .img-sunflowers, .img-khazix, .img-ocean, .img-windmill, .img-town {
+        .img-sunrise, .img-desert, .img-woods, .img-sunflowers, .img-khazix, 
+        .img-ocean, .img-windmill, .img-town {
             position: relative;
             width: 120px;
         }
@@ -309,15 +308,11 @@
             height: 70px;
         }
 
-        .cyndaquil, .img-pokemon, .img-section3 {
-            width:  77px;
-            height: 77px;
-        }
-
+        .cyndaquil, .img-pokemon, .img-section3, 
         .container--pokemon-img:before, .container--unique-img:before {
             width:  77px;
             height: 77px;
-          }
+        }
     }
 
     @media only screen and (max-width: 731px) and (min-width: 319px) and (hover: none) {
@@ -325,66 +320,50 @@
             opacity: 0; /* Or any other styling to remove the pseudo-element */
         }
     }
-    @media only screen and (max-width: 9999px) and (min-width: 732px) {
 
+    
+    @media only screen and (max-width: 9999px) and (min-width: 732px) {
+        .container--pokemon-img:before,
+        .container--unique-img:before,
+        .container--colorful-img:before,
         .profile-picture-holder:before {
             content: "";
             position: absolute;
+            border: 3px solid black;
+            background: rgb(0,0,0);
+            background: -moz-linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(24,25,26,0.5971638655462185) 0%);
+            background: -webkit-linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(24,25,26,0.5971638655462185) 0%);
+            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(24,25,26,0.5971638655462185) 0%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#18191a",GradientType=1);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .profile-picture-holder:before {
             top: -40px;
             left: -60px;
             border-radius: 50%;
             width:140px;
             height: 140px;        
-            border: 3px solid black;
-            background: rgb(0,0,0);
-            background: -moz-linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(24,25,26,0.5971638655462185) 0%);
-            background: -webkit-linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(24,25,26,0.5971638655462185) 0%);
-            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(24,25,26,0.5971638655462185) 0%);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#18191a",GradientType=1);
-            opacity: 0;
-            transition: opacity 0.3s ease;
             z-index: 16;
         }
         
-        .profile-picture-holder:hover::before {
-            opacity: 1;
-        }
-
         .container--colorful-img:before {
-            content: "";
-            position: absolute;
             top: 0;
             left: 0;
             width: 290px;
             height: 422.638px;
-            border: 3px solid black;
-            background: rgb(0,0,0);
-            background: -moz-linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(24,25,26,0.5971638655462185) 0%);
-            background: -webkit-linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(24,25,26,0.5971638655462185) 0%);
-            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(24,25,26,0.5971638655462185) 0%);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#18191a",GradientType=1);
-            opacity: 0;
-            transition: opacity 0.3s ease;
         }
         
         .container--pokemon-img:before, .container--unique-img:before {
-            content: "";
-            position: absolute;
             top: 0;
             left: 0;
             width: 197px;
             height: 197px;
-            border: 3px solid black;
-            background: rgb(0,0,0);
-            background: -moz-linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(24,25,26,0.5971638655462185) 0%);
-            background: -webkit-linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(24,25,26,0.5971638655462185) 0%);
-            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(24,25,26,0.5971638655462185) 0%);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#18191a",GradientType=1);
-            opacity: 0;
-            transition: opacity 0.3s ease;
         }
         
-        .container--pokemon-img:hover::before, .container--unique-img:hover::before, .container--colorful-img:hover::before {
+        .container--pokemon-img:hover::before, .container--unique-img:hover::before, 
+        .container--colorful-img:hover::before, .profile-picture-holder:hover::before {
             opacity: 1;
         }
     }
