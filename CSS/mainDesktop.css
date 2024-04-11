@@ -9,7 +9,7 @@
     rgba(5,5,6,0.5411414565826331) 0%, rgba(24,25,26,1) 90%);
 }
 
-.background-img {
+.background-image {
     height: 35vh;
     width: 100%;
     object-fit: cover;
@@ -39,8 +39,8 @@
         padding: 1rem;
         
         position: relative;
-        left: 50%; transform: 
-        translateX(-50%);
+        left: 50%; 
+        transform: translateX(-50%);
         top: 10vh;
         z-index: 15;
         min-width: 264px;
