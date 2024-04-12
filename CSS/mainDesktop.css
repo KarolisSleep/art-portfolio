@@ -30,7 +30,6 @@
     object-fit: cover;
     z-index: 15;
     transition: transform 0.3s ease;
-    /* Add transition for smooth effect */
 }
 
 .profile-picture,
@@ -53,7 +52,21 @@
     left: 0px;
 }
 
+.about-me-section {
+    padding: 1rem;
+    overflow: auto;
+    overflow-x: hidden;
+    display: none;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+
 .about-me-section__animation {
+    display: block;
     position: absolute;
     width: 0px;
     left: 50%;
@@ -319,12 +332,4 @@
     border-radius: 10px;
     background: var(--scrollbar-background-color, initial);
     -webkit-box-shadow: inset 0 0 6px var(--scrollbar-box-shadow-color, initial);
-}
-
-::-webkit-scrollbar-track-piece:end {
-    margin: 10px;
-}
-
-::-webkit-scrollbar-track-piece:start {
-    margin-top: 10px;
 }
