@@ -30,7 +30,7 @@ function toggleGridClass() {
     parentContainer.classList.toggle("grid");
 }
 
-/* A function upon interacting with the profile icon */
+/* This makes it so when I click on the profile icon it opens the about me page*/
 function toggleAboutMe() {
     var aboutMeSection = document.querySelector('.about-me-section');
     aboutMeSection.classList.toggle('about-me-section__animation');
@@ -38,6 +38,14 @@ function toggleAboutMe() {
     var container = document.getElementById('container--sections-holder');
     container.classList.toggle('background--darken');
     container.classList.toggle('containerBorderRemoveAnimation__animation');
+}
+
+/* Clicking on a section removes the custom icons on toggle */
+function toggleSolidIconVisibility() {
+    const solidIcons = document.querySelectorAll('.fa-solid'); // Select all elements with the class .fa-solid
+    solidIcons.forEach(icon => {
+        icon.style.display = icon.style.display === 'none' ? '' : 'none'; // Toggle display property
+    });
 }
 
 /* First container */
@@ -94,6 +102,7 @@ function openColorfulDrawingsContainer() {
     var img = document.querySelector(".img-windmill");
     img.src = "./IMG/colorful drawings/Windmill.jpg";
 
+    toggleSolidIconVisibility()
     toggleGridClass();
 }
 
@@ -127,6 +136,7 @@ function openPokemonDrawingsContainer() {
     document.querySelector(".img-darkrai").src = "./IMG/pokemon drawings/Darkrai.jpg";
     document.querySelector(".img-ghosts").src = "./IMG/pokemon drawings/Chandelure and Annihilape.jpg";
 
+    toggleSolidIconVisibility()
     toggleGridClass();
 };
 
@@ -164,6 +174,7 @@ function openUniqueDrawingsContainer() {
     document.querySelector(".img-angel").src = "./IMG/simpler drawings/Angel.jpg";
     document.querySelector(".img-city").src = "./IMG/simpler drawings/City.jpg";
 
+    toggleSolidIconVisibility()
     toggleGridClass();
 }
 

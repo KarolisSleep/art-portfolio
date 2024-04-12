@@ -122,6 +122,12 @@
             height: 278.350px;
         }
 
+        .fa-solid {
+            scale: 0.6;
+            bottom: 8px;
+            right: -2px;
+        }
+
         .img-khazix,
         .img-ocean,
         .img-desert,
@@ -214,6 +220,12 @@
         .container--colorful-img::before {
             width: 130px;
             height: 189.450px;
+        }
+
+        .fa-solid {
+            scale: 0.4;
+            bottom: 4px;
+            right: -7px;
         }
 
         .img-desert,

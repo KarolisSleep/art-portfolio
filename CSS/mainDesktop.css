@@ -145,22 +145,6 @@
     color: white;
 }
 
-.shadow-effect {
-    position: absolute;
-    right: -10px;
-    bottom: -10px;
-    width: 70px;
-    height: 40px;
-    background: linear-gradient(to top left, rgba(0, 0, 0, 0.8), transparent), /* Dark linear gradient */
-                        radial-gradient(circle at bottom right, rgba(0, 0, 0, 1), transparent); /* Circular gradient */
-            background-origin: border-box; /* Ensure background starts from border */
-            background-clip: content-box, border-box; /* Clip background to content and border boxes */
-            background-origin: border-box; /* Ensure background starts from border */
-            background-clip: content-box, content-box, border-box; /* Clip background to content and border boxes */
-            border-top-left-radius: 100px;
-            filter: blur(5px); /* Blur effect */
-}
-
 .grid {
     display: grid;
     /* grid-template-columns: 294px 202px 200px; */
