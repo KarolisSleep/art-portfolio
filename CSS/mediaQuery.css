@@ -117,9 +117,20 @@
             top: 0;
         }
 
+        .profile-picture-holder:before {
+            top: -30px;
+            left: -30px;
+            width: 100px;
+            height: 100px;
+        }
+
         .container--colorful-img::before {
             width: 191px;
             height: 278.350px;
+        }
+
+        .container--unique-img>.fa-solid {
+            right: -5px;
         }
 
         .fa-solid {
@@ -217,9 +228,20 @@
             top: 0;
         }
 
+        .profile-picture-holder:before {            
+            top: -40px;
+            left: -30px;
+            width: 90px;
+            height: 90px;
+        }
+        
         .container--colorful-img::before {
             width: 130px;
             height: 189.450px;
+        }
+        
+        .container--unique-img>.fa-solid {
+            right: -10px;
         }
 
         .fa-solid {
@@ -325,6 +347,23 @@
             justify-content: center;
         }
 
+        .profile-picture-holder:before {
+            left: -25px;
+            top: -40px;
+            width: 70px;
+            height: 70px;
+        }
+
+        .fa-solid {
+            scale: 0.3;
+            bottom: 4px;
+            right: -10px;
+        }
+
+        .container--unique-img>.fa-solid {
+            right: -13px;
+        }
+
         .container--colorful-img::before {
             width: 120px;
             height: 174.867px;
@@ -388,7 +427,7 @@
 
         .profile-picture {
             left: -25px;
-            top: -25;
+            top: -40px;
             width: 70px;
             height: 70px;
         }
@@ -404,7 +443,6 @@
     }
 
     @media only screen and (max-width: 731px) and (min-width: 319px) and (hover: none) {
-
         .container--pokemon-img::before,
         .container--unique-img::before,
         .container--colorful-img::before {
@@ -412,7 +450,6 @@
             /* Or any other styling to remove the pseudo-element */
         }
     }
-
 
     @media only screen and (max-width: 9999px) and (min-width: 732px) {
 

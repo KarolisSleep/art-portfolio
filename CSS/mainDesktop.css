@@ -52,6 +52,15 @@
     left: 0px;
 }
 
+.profile-picture-holder:before {
+    content: "";
+    position: absolute;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 16;
+}
+
 .about-me-section {
     padding: 1rem;
     overflow: auto;
