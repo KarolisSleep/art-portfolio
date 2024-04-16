@@ -17,32 +17,5 @@
 
     .unique-drawings--container {
         grid-area: 2 / 2 / 3 / 3;
-        top: -11px;
-    }
-}
-
-@media only screen and (max-width: 730px) {
-
-    .unique-drawings--container {
-        top: -20.5px;
-    }
-
-    .pokemon-drawings--container,
-    .unique-drawings--container {
-        position: relative;
-        left: -3px;
-    }
-
-}
-
-@media only screen and (max-width: 490px) and (min-width: 360px) {
-    .unique-drawings--container {
-        top: -15.5px;
-    }
-}
-
-@media only screen and (max-width: 360px) {
-    .unique-drawings--container {
-        top: -10.5px;
     }
 }

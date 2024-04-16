@@ -131,6 +131,8 @@ function openPokemonDrawingsContainer() {
     });
 
     // Update image sources
+    document.querySelector(".img-volcarona").src = "./IMG/pokemon drawings/Volcarona.jpg";
+    document.querySelector(".img-zubat").src = "./IMG/pokemon drawings/Bats.jpg";
     document.querySelector(".img-zoroark").src = "./IMG/pokemon drawings/Zoroark.jpg";
     document.querySelector(".img-sylveon").src = "./IMG/pokemon drawings/Sylveon.png";
     document.querySelector(".img-darkrai").src = "./IMG/pokemon drawings/Darkrai.jpg";

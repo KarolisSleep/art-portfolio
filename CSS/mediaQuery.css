@@ -202,6 +202,10 @@
             height: 119px;
         }
 
+        .img-volcarona {
+            width: 164px;
+        }
+
         .container--pokemon-img:before,
         .container--unique-img:before {
             width: 120px;
@@ -318,6 +322,10 @@
         .img-section3 {
             width: 79px;
             height: 79px;
+        }
+
+        .img-volcarona {
+            width: 110px;
         }
 
         .container--pokemon-img:before,
@@ -439,6 +447,10 @@
         .container--unique-img:before {
             width: 77px;
             height: 77px;
+        }
+
+        .img-volcarona {
+            width: 108px;
         }
     }
 

@@ -73,6 +73,11 @@ h1 {
     text-align: center;
 }
 
+.author {
+    float: right;
+    margin-top: 1rem;
+    padding: 16px;
+}
 
 .about-me-section__animation {
     display: block;
@@ -294,6 +299,12 @@ h1 {
     height: 197px;
     border: 3px solid var(--border-color);
     object-fit: contain;
+}
+
+.img-volcarona {
+    width: 274px;
+    height: 197px;
+    border: 3px solid var(--border-color);
 }
 
 .img-ghosts {
