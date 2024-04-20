@@ -174,9 +174,7 @@ h1 {
 
 .grid {
     display: grid;
-    /* grid-template-columns: 294px 202px 200px; */
     grid-template-columns: min-content min-content min-content;
-
     grid-template-rows: min-content, min-content, min-content;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
