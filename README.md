@@ -1,1 +1,1 @@
-This project is my personal Art Portfolio made by me, Karolis D. Saganas. I don't want anyone to use my work for anything, this my work and I made it so I could share my drawings with the people that I want to share with, nobody else.
+This project is my personal Art Portfolio made by me, Karolis D. Saganas. I don't want anyone to use my work for anything. I made it so I could share my drawings with the people that I want to share with, nobody else.
